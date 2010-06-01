@@ -1,0 +1,70 @@
+Changes in 0.9.124:
+==================
+- prevented Poser from welding the toecaps to the skin
+- reshaped the feet
+- reverted pose files to Poser 4 style
+- fixed origins and bend parameters for thumb2 and thumb3
+- tongue1 no longer moves lower jaw with it
+- made translation channels for tongue1 visible
+- fixed some problems in the foot rigging
+- made hands and feet scale smoothly
+- added JCMs for thumb grasp and spread
+- improved neck stretching and shortening via y-scale
+
+Changes in 0.9.123:
+==================
+- removed spherical falloff zones from abdomen bend and tweaked angles
+- symmetrized UVs for brow covers (thanks sazzyazzca and Cage)
+- renamed 'oldUVs' variants of figure to 'A' (Antonia-123A.cr2 etc.)
+- re-rigged thumbs with xyz rotation order for all parts
+- reshaped the fingers and thumb
+- changed origins for eye cover actors
+- improved joint parameters for head turn (hat tip at lesbentley)
+
+Changes in 0.9.122:
+==================
+- better morph for hiding toecaps within the foot
+- eyes no longer welded to the head
+- added empty eye cover actors
+- removed some dial groups
+- hid dependent morph channels
+- hid translation dials except in body, eyes and hip
+- added ankle JCMs
+- improved knee JCMs
+- changed init values for thigh, shin and foot rotations to 0
+
+Changes in 0.9.121:
+==================
+- applied MikeJ's new UV maps to everything but the eyes
+- improved joint setup in ankles and feet/insteps
+- added JCMs for hands and collars
+
+Changes in 120:
+==============
+- improved joint setup in neck and head
+- fixed forearm twist setup
+- shrank eyes to a more realistic size
+- fixed little glitch in toe joint zone
+- no more deformation when rotating the figure by the hip
+
+Changes in 118:
+==============
+- removed actors 'hiphandle', 'groin', 'lHip', 'rHip', 'lBreast' and 'rBreast'
+
+Changes between 114 and 117:
+===========================
+- translation channels no longer frozen
+- fixed head twist glitch
+- head points at objects correctly
+- Posers respect turned off IK chains in legs
+- improved shoulder JCMs
+- improved collar joint setup
+- added a handle for picking the body
+- handles can be switched on and off by a body dial
+- handles no longer deform when bent
+- made low- and high-res cr2s identical (except for morph deltas)
+- drop-down display of body parts is ordered more sensibly
+- added inverse kinematic chains for the arms
+- fixed dents under nipples and buttocks overlap
+- included "eyebrows gone" and "toecaps gone" morphs
+- added blank channels for morph injection

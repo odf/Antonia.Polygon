@@ -1,0 +1,334 @@
+{
+version
+	{
+	number 4.01
+	}
+actor BODY
+	{
+	channels
+		{
+		propagatingScale scale
+			{
+			keys
+				{
+				k 0 1.11
+				}
+			}
+		propagatingScaleX xScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		propagatingScaleY yScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		propagatingScaleZ zScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		}
+	}
+actor hip
+	{
+	channels
+		{
+		scale scale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale xScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale yScale
+			{
+			keys
+				{
+				k 0 0.9
+				}
+			}
+		scale zScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		}
+	}
+actor hip2
+	{
+	channels
+		{
+		scale scale
+			{
+			keys
+				{
+				k 0 0.9
+				}
+			}
+		scale xScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale yScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale zScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		}
+	}
+actor rThigh
+	{
+	channels
+		{
+		scale scale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale xScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale yScale
+			{
+			keys
+				{
+				k 0 0.9
+				}
+			}
+		scale zScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		}
+	}
+actor rShin
+	{
+	channels
+		{
+		scale scale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale xScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale yScale
+			{
+			keys
+				{
+				k 0 0.9
+				}
+			}
+		scale zScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		}
+	}
+actor lThigh
+	{
+	channels
+		{
+		scale scale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale xScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale yScale
+			{
+			keys
+				{
+				k 0 0.9
+				}
+			}
+		scale zScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		}
+	}
+actor lShin
+	{
+	channels
+		{
+		scale scale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale xScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale yScale
+			{
+			keys
+				{
+				k 0 0.9
+				}
+			}
+		scale zScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		}
+	}
+actor abdomen
+	{
+	channels
+		{
+		scale scale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale xScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale yScale
+			{
+			keys
+				{
+				k 0 0.9
+				}
+			}
+		scale zScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		}
+	}
+actor chest
+	{
+	channels
+		{
+		scale scale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale xScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		scale yScale
+			{
+			keys
+				{
+				k 0 0.9
+				}
+			}
+		scale zScale
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		}
+	}
+actor head
+	{
+	channels
+		{
+		valueParm CTRLHeadGrow
+			{
+			keys
+				{
+				k 0 -0.05
+				}
+			}
+		}
+	}
+}
+{
+version
+	{
+	number 4.01
+	}
+figure
+	{
+	}
+}

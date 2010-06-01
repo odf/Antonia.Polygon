@@ -1,0 +1,404 @@
+{
+version
+	{
+	number 4.01
+	}
+thighLength 0.173937
+actor rCollar:1
+	{
+	channels
+		{
+		rotateX xrot
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		rotateY yrot
+			{
+			keys
+				{
+				k 0 -4
+				}
+			}
+		rotateZ zrot
+			{
+			keys
+				{
+				k 0 -6
+				}
+			}
+		translateX xtran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateY ytran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateZ ztran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		}
+	}
+actor rShldr:1
+	{
+	channels
+		{
+		rotateX xrot
+			{
+			keys
+				{
+				k 0 -76
+				}
+			}
+		rotateY yrot
+			{
+			keys
+				{
+				k 0 36
+				}
+			}
+		rotateZ zrot
+			{
+			keys
+				{
+				k 0 -37
+				}
+			}
+		translateX xtran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateY ytran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateZ ztran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		}
+	}
+actor rForeArm:1
+	{
+	channels
+		{
+		rotateX xrot
+			{
+			keys
+				{
+				k 0 3
+				}
+			}
+		rotateZ zrot
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		rotateY yrot
+			{
+			keys
+				{
+				k 0 101
+				}
+			}
+		translateX xtran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateY ytran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateZ ztran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		}
+	}
+actor rHand:1
+	{
+	channels
+		{
+		rotateX xrot
+			{
+			keys
+				{
+				k 0 13
+				}
+			}
+		rotateY yrot
+			{
+			keys
+				{
+				k 0 -15
+				}
+			}
+		rotateZ zrot
+			{
+			keys
+				{
+				k 0 1
+				}
+			}
+		translateX xtran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateY ytran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateZ ztran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		}
+	}
+actor lCollar:1
+	{
+	channels
+		{
+		rotateX xrot
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		rotateY yrot
+			{
+			keys
+				{
+				k 0 4
+				}
+			}
+		rotateZ zrot
+			{
+			keys
+				{
+				k 0 6
+				}
+			}
+		translateX xtran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateY ytran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateZ ztran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		}
+	}
+actor lShldr:1
+	{
+	channels
+		{
+		rotateX xrot
+			{
+			keys
+				{
+				k 0 -76
+				}
+			}
+		rotateY yrot
+			{
+			keys
+				{
+				k 0 -36
+				}
+			}
+		rotateZ zrot
+			{
+			keys
+				{
+				k 0 37
+				}
+			}
+		translateX xtran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateY ytran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateZ ztran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		}
+	}
+actor lForeArm:1
+	{
+	channels
+		{
+		rotateX xrot
+			{
+			keys
+				{
+				k 0 3
+				}
+			}
+		rotateZ zrot
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		rotateY yrot
+			{
+			keys
+				{
+				k 0 -101
+				}
+			}
+		translateX xtran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateY ytran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateZ ztran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		}
+	}
+actor lHand:1
+	{
+	channels
+		{
+		rotateX xrot
+			{
+			keys
+				{
+				k 0 13
+				}
+			}
+		rotateY yrot
+			{
+			keys
+				{
+				k 0 15
+				}
+			}
+		rotateZ zrot
+			{
+			keys
+				{
+				k 0 -1
+				}
+			}
+		translateX xtran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateY ytran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		translateZ ztran
+			{
+			keys
+				{
+				k 0 0
+				}
+			}
+		}
+	}
+figure
+	{
+	}
+}
+{
+version
+	{
+	number 4.01
+	}
+thighLength 0.173937
+figure
+	{
+	}
+}
