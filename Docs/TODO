@@ -1,3 +1,3 @@
-- move center for neck actor further back
+- make JCMs for the neck
 - set limits for bends
 - fix ordering for materials via pre-deploy script?

@@ -1,12 +1,12 @@
 Changes in 0.9.124:
 ==================
+- made pose files compatible with Poser 4
+- fixed some problems in the foot rigging
 - prevented Poser from welding the toecaps to the skin
 - reshaped the feet
-- reverted pose files to Poser 4 style
-- fixed origins and bend parameters for thumb2 and thumb3
 - tongue1 no longer moves lower jaw with it
 - made translation channels for tongue1 visible
-- fixed some problems in the foot rigging
+- fixed origins and bend parameters for thumb2 and thumb3
 - made hands and feet scale smoothly
 - added JCMs for thumb grasp and spread
 - improved neck stretching and shortening via y-scale

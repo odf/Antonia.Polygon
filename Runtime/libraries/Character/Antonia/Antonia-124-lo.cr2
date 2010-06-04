@@ -7285,8 +7285,8 @@ actor rFoot:1
 			otherActor rInstep:1
 			matrixActor NULL
 			center -0.08 0.0161163 0.003
-			startPt 0.003
-			endPt 0.036
+			startPt -0.00189665
+			endPt 0.0175676
 			flipped
 			calcWeights
 			}
@@ -7305,7 +7305,7 @@ actor rFoot:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -114.122 147.861 45 -55
+			angles -141.938 140.468 57.4515 -26.6161
 			otherActor rInstep:1
 			matrixActor NULL
 			center -0.08 0.0161163 0.003
@@ -7329,7 +7329,7 @@ actor rFoot:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -21.374 -151.175 -197.584 87.543
+			angles -21.374 -151.175 162.416 87.543
 			otherActor rInstep:1
 			matrixActor NULL
 			center -0.08 0.0161163 0.003
@@ -7491,7 +7491,7 @@ actor rFoot:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles 61.6552 -11.0621 -190.107 122.589
+			angles 61.6552 -11.0621 169.893 122.589
 			otherActor rShin:1
 			matrixActor NULL
 			center -0.079 0.024 -0.018
@@ -8103,9 +8103,9 @@ actor rInstep:1
 			interpStyleLocked 0
 			otherActor rToe:1
 			matrixActor NULL
-			center -0.086 0.009 0.037
-			startPt 0.038
-			endPt 0.0604276
+			center -0.0742902 0.0094089 0.040691
+			startPt 0.0247149
+			endPt 0.0418692
 			flipped
 			calcWeights
 			}
@@ -8124,12 +8124,16 @@ actor rInstep:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -128.435 -160.1 58.982 44.584
+			angles -140.867 -179.238 92.1887 -92.4401
 			otherActor rToe:1
 			matrixActor NULL
-			center -0.086 0.009 0.037
+			center -0.0742902 0.0094089 0.040691
 			flipped
-			doBulge 0
+			doBulge 1
+			posBulgeLeft -0.1
+			posBulgeRight 0
+			negBulgeLeft 0
+			negBulgeRight 0
 			jointMult 1
 			calcWeights
 			}
@@ -8148,10 +8152,10 @@ actor rInstep:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles 0.611267 -106.056 -207.268 58.8429
+			angles 0.611267 -106.056 152.732 58.8429
 			otherActor rToe:1
 			matrixActor NULL
-			center -0.086 0.009 0.037
+			center -0.0742902 0.0094089 0.040691
 			flipped
 			doBulge 0
 			jointMult 1
@@ -8317,7 +8321,7 @@ actor rInstep:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -21.374 -151.175 -197.584 87.543
+			angles -21.374 -151.175 162.416 87.543
 			otherActor rFoot:1
 			matrixActor NULL
 			center -0.08 0.0161163 0.003
@@ -8344,7 +8348,7 @@ actor rInstep:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -114.122 147.861 45 -55
+			angles -141.938 140.468 57.4515 -26.6161
 			otherActor rFoot:1
 			matrixActor NULL
 			center -0.08 0.0161163 0.003
@@ -8370,8 +8374,8 @@ actor rInstep:1
 			otherActor rFoot:1
 			matrixActor NULL
 			center -0.08 0.0161163 0.003
-			startPt 0.003
-			endPt 0.036
+			startPt -0.00189665
+			endPt 0.0175676
 			calcWeights
 			}
 		rotateZ zrot
@@ -8522,7 +8526,7 @@ actor rInstep:1
 			interpStyleLocked 0
 			}
 		}
-	endPoint -0.072 0.00800001 0.039
+	endPoint -0.0742902 0.00940885 0.040691
 	origin -0.08 0.0161163 0.003
 	orientation 2.5 -6.4 1.469
 	displayOrigin 0
@@ -9264,10 +9268,10 @@ actor rToe:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles 0.611267 -106.056 -207.268 58.8429
+			angles 0.611267 -106.056 152.732 58.8429
 			otherActor rInstep:1
 			matrixActor NULL
-			center -0.086 0.009 0.037
+			center -0.0742902 0.0094089 0.040691
 			doBulge 0
 			jointMult 1
 			calcWeights
@@ -9287,11 +9291,15 @@ actor rToe:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -128.435 -160.1 58.982 44.584
+			angles -140.867 -179.238 92.1887 -92.4401
 			otherActor rInstep:1
 			matrixActor NULL
-			center -0.086 0.009 0.037
-			doBulge 0
+			center -0.0742902 0.0094089 0.040691
+			doBulge 1
+			posBulgeLeft -0.1
+			posBulgeRight 0
+			negBulgeLeft 0
+			negBulgeRight 0
 			jointMult 1
 			calcWeights
 			}
@@ -9312,9 +9320,9 @@ actor rToe:1
 			interpStyleLocked 0
 			otherActor rInstep:1
 			matrixActor NULL
-			center -0.086 0.009 0.037
-			startPt 0.038
-			endPt 0.0604276
+			center -0.0742902 0.0094089 0.040691
+			startPt 0.0247149
+			endPt 0.0418692
 			calcWeights
 			}
 		rotateZ zrot
@@ -9465,8 +9473,8 @@ actor rToe:1
 			interpStyleLocked 0
 			}
 		}
-	endPoint -0.0877715 0.00904159 0.0446386
-	origin -0.086 0.009 0.037
+	endPoint -0.0724043 0.0102276 0.0398897
+	origin -0.0742902 0.0094089 0.040691
 	orientation -14.7 -16 4.16899
 	displayOrigin 0
 	locked 0
@@ -13654,19 +13662,9 @@ actor lFoot:1
 			otherActor lInstep:1
 			matrixActor NULL
 			center 0.08 0.0161163 0.003
-			startPt 0
-			endPt 0.1
+			startPt -0.00189665
+			endPt 0.0175676
 			flipped
-			sphereMatsRaw
-			0.069984 0.00028629 3.568e-05 0
-			-4.977e-05 0.0174703 -0.042546 0
-			-0.00023073 0.0536563 0.0220327 0
-			0.0714543 0.00087112 0.079702 1
-			
-			0.0680001 -3.476e-05 3.478e-05 0
-			2.659e-05 0.052 -1.772e-05 0
-			-4.09e-05 2.729e-05 0.0800001 0
-			0.0944157 0.0163913 0.0753297 1
 			calcWeights
 			}
 		jointY lInstep_jointy
@@ -13684,21 +13682,11 @@ actor lFoot:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -90 -180 90 0
+			angles -153.384 122.549 39.532 -38.0619
 			otherActor lInstep:1
 			matrixActor NULL
 			center 0.08 0.0161163 0.003
 			flipped
-			sphereMatsRaw
-			0.034 -1.738e-05 1.739e-05 0
-			2.557e-05 0.05 -1.704e-05 0
-			-2.965e-05 1.978e-05 0.058 0
-			0.083393 0.0049422 0.0601252 1
-			
-			0.0680001 -3.476e-05 3.478e-05 0
-			3.119e-05 0.061 -2.079e-05 0
-			-4.908e-05 3.275e-05 0.0959999 0
-			0.0941032 -0.00409578 0.077926 1
 			doBulge 0
 			jointMult 1
 			calcWeights
@@ -13718,7 +13706,7 @@ actor lFoot:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -21.374 -151.175 -197.584 87.543
+			angles -21.374 -151.175 162.416 87.543
 			otherActor lInstep:1
 			matrixActor NULL
 			center 0.08 0.0161163 0.003
@@ -13880,7 +13868,7 @@ actor lFoot:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles 61.6552 -11.0621 -190.107 122.589
+			angles 61.6552 -11.0621 169.893 122.589
 			otherActor lShin:1
 			matrixActor NULL
 			center 0.079 0.024 -0.018
@@ -14492,9 +14480,9 @@ actor lInstep:1
 			interpStyleLocked 0
 			otherActor lToe:1
 			matrixActor NULL
-			center 0.086 0.009 0.037
-			startPt 0.038
-			endPt 0.0604276
+			center 0.0742902 0.0094089 0.040691
+			startPt 0.0247149
+			endPt 0.0418692
 			flipped
 			calcWeights
 			}
@@ -14513,12 +14501,16 @@ actor lInstep:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles 135.416 121.018 -19.9 -51.565
+			angles -87.5599 87.8113 -0.761949 -39.133
 			otherActor lToe:1
 			matrixActor NULL
-			center 0.086 0.009 0.037
+			center 0.0742902 0.0094089 0.040691
 			flipped
-			doBulge 0
+			doBulge 1
+			posBulgeLeft 0
+			posBulgeRight 0
+			negBulgeLeft 0
+			negBulgeRight -0.1
 			jointMult 1
 			calcWeights
 			}
@@ -14537,10 +14529,10 @@ actor lInstep:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles 0.611267 -106.056 -207.268 58.8429
+			angles 0.611267 -106.056 152.732 58.8429
 			otherActor lToe:1
 			matrixActor NULL
-			center 0.086 0.009 0.037
+			center 0.0742902 0.0094089 0.040691
 			flipped
 			doBulge 0
 			jointMult 1
@@ -14706,7 +14698,7 @@ actor lInstep:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -21.374 -151.175 -197.584 87.543
+			angles -21.374 -151.175 162.416 87.543
 			otherActor lFoot:1
 			matrixActor NULL
 			center 0.08 0.0161163 0.003
@@ -14733,20 +14725,10 @@ actor lInstep:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -90 -180 90 0
+			angles -153.384 122.549 39.532 -38.0619
 			otherActor lFoot:1
 			matrixActor NULL
 			center 0.08 0.0161163 0.003
-			sphereMatsRaw
-			0.034 -1.738e-05 1.739e-05 0
-			2.557e-05 0.05 -1.704e-05 0
-			-2.965e-05 1.978e-05 0.058 0
-			0.083393 0.0049422 0.0601252 1
-			
-			0.0680001 -3.476e-05 3.478e-05 0
-			3.119e-05 0.061 -2.079e-05 0
-			-4.908e-05 3.275e-05 0.0959999 0
-			0.0941032 -0.00409578 0.077926 1
 			doBulge 0
 			jointMult 1
 			calcWeights
@@ -14769,18 +14751,8 @@ actor lInstep:1
 			otherActor lFoot:1
 			matrixActor NULL
 			center 0.08 0.0161163 0.003
-			startPt 0
-			endPt 0.1
-			sphereMatsRaw
-			0.069984 0.00028629 3.568e-05 0
-			-4.977e-05 0.0174703 -0.042546 0
-			-0.00023073 0.0536563 0.0220327 0
-			0.0714543 0.00087112 0.079702 1
-			
-			0.0680001 -3.476e-05 3.478e-05 0
-			2.659e-05 0.052 -1.772e-05 0
-			-4.09e-05 2.729e-05 0.0800001 0
-			0.0944157 0.0163913 0.0753297 1
+			startPt -0.00189665
+			endPt 0.0175676
 			calcWeights
 			}
 		rotateZ zrot
@@ -14931,7 +14903,7 @@ actor lInstep:1
 			interpStyleLocked 0
 			}
 		}
-	endPoint 0.072 0.00800001 0.039
+	endPoint 0.0742902 0.00940885 0.040691
 	origin 0.08 0.0161163 0.003
 	orientation 2.5 6.4 -1.469
 	displayOrigin 0
@@ -15673,10 +15645,10 @@ actor lToe:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles 0.611267 -106.056 -207.268 58.8429
+			angles 0.611267 -106.056 152.732 58.8429
 			otherActor lInstep:1
 			matrixActor NULL
-			center 0.086 0.009 0.037
+			center 0.0742902 0.0094089 0.040691
 			doBulge 0
 			jointMult 1
 			calcWeights
@@ -15696,11 +15668,15 @@ actor lToe:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles 135.416 121.018 -19.9 -51.565
+			angles -87.5599 87.8113 -0.761949 -39.133
 			otherActor lInstep:1
 			matrixActor NULL
-			center 0.086 0.009 0.037
-			doBulge 0
+			center 0.0742902 0.0094089 0.040691
+			doBulge 1
+			posBulgeLeft 0
+			posBulgeRight 0
+			negBulgeLeft 0
+			negBulgeRight -0.1
 			jointMult 1
 			calcWeights
 			}
@@ -15721,9 +15697,9 @@ actor lToe:1
 			interpStyleLocked 0
 			otherActor lInstep:1
 			matrixActor NULL
-			center 0.086 0.009 0.037
-			startPt 0.038
-			endPt 0.0604276
+			center 0.0742902 0.0094089 0.040691
+			startPt 0.0247149
+			endPt 0.0418692
 			calcWeights
 			}
 		rotateZ zrot
@@ -15874,8 +15850,8 @@ actor lToe:1
 			interpStyleLocked 0
 			}
 		}
-	endPoint 0.0877715 0.00904159 0.0446386
-	origin 0.086 0.009 0.037
+	endPoint 0.0724043 0.0102276 0.0398897
+	origin 0.0742902 0.0094089 0.040691
 	orientation -14.7 16 -4.16899
 	displayOrigin 0
 	locked 0
