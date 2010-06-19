@@ -1,3 +1,4 @@
-- make JCMs for the neck and toes
+- make JCMs for the neck
+- provide a pose that re-inserts JCM-ERC when lost
 - set limits for bends
-- fix ordering for materials via pre-deploy script?
+- final version: fix ordering of materials in obj file
