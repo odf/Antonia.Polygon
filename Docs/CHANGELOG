@@ -1,6 +1,7 @@
 Changes in 0.9.125:
 ==================
-- add JCMs for upward toe bend
+- added JCMs for head back and head turn
+- added JCMs for upward toe bend
 - added curl and spread morphs for toes
 - fixed problems in first big toe actors
 
