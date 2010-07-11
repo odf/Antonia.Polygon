@@ -1,6 +1,7 @@
 Changes in 0.9.126:
 ==================
-- 
+- introduced control channels in the BODY actor for all the JCMs
+- fixed some problems in the foot joint
 
 Changes in 0.9.125:
 ==================

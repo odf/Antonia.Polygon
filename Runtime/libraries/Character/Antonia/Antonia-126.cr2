@@ -376,12 +376,83 @@ actor BODY:1
 						}
 					}
 				}
+			groupNode JCMs
+				{
+				collapsed 1
+				groupNode Left Leg/Foot
+					{
+					collapsed 1
+					parmNode JCM-lThighKick
+					parmNode JCM-lThighSpread
+					parmNode JCM-lKneeBend
+					parmNode JCM-lKneeBend-B
+					parmNode JCM-lFootBend
+					parmNode JCM-lToeBendUp
+					}
+				groupNode Right Leg/Foot
+					{
+					collapsed 1
+					parmNode JCM-rThighKick
+					parmNode JCM-rThighSpread
+					parmNode JCM-rKneeBend
+					parmNode JCM-rKneeBend-B
+					parmNode JCM-rFootBend
+					parmNode JCM-rToeBendUp
+					}
+				groupNode Head
+					{
+					collapsed 1
+					parmNode JCM-HeadBack
+					parmNode JCM-HeadTurnLeft
+					parmNode JCM-HeadTurnRight
+					}
+				groupNode Left Arm
+					{
+					collapsed 1
+					parmNode JCM-lCollarUp
+					parmNode JCM-lShldrUp
+					parmNode JCM-lShldrDown
+					parmNode JCM-lShldrForw
+					parmNode JCM-lShldrBack
+					parmNode JCM-lShldrTwistForw
+					parmNode JCM-lElbowBend
+					}
+				groupNode Left Hand
+					{
+					collapsed 1
+					parmNode JCM-lHandForw
+					parmNode JCM-lHandBack
+					parmNode JCM-lThumbGrasp
+					parmNode JCM-lThumbGraspNeg
+					parmNode JCM-lThumbSpread
+					}
+				groupNode Right Arm
+					{
+					collapsed 1
+					parmNode JCM-rCollarUp
+					parmNode JCM-rShldrUp
+					parmNode JCM-rShldrDown
+					parmNode JCM-rShldrForw
+					parmNode JCM-rShldrBack
+					parmNode JCM-rShldrTwistForw
+					parmNode JCM-rElbowBend
+					}
+				groupNode Right Hand
+					{
+					collapsed 1
+					parmNode JCM-rHandForw
+					parmNode JCM-rHandBack
+					parmNode JCM-rThumbGrasp
+					parmNode JCM-rThumbGraspNeg
+					parmNode JCM-rThumbSpread
+					}
+				}
 			}
 		valueParm JCM-HeadTurnLeft
 			{
 			name JCM-HeadTurnLeft
 			initValue 0
-			hidden 1
+			hidden 0
 			forceLimits 1
 			min 0
 			max 2
@@ -393,17 +464,17 @@ actor BODY:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head
-			yrot
-			deltaAddDelta 0.02
+				Figure
+				head
+				yrot
+				deltaAddDelta 0.02
 			blendType 0
 			}
 		valueParm JCM-HeadTurnRight
 			{
 			name JCM-HeadTurnRight
 			initValue 0
-			hidden 1
+			hidden 0
 			forceLimits 1
 			min 0
 			max 2
@@ -415,17 +486,17 @@ actor BODY:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head
-			yrot
-			deltaAddDelta -0.02
+				Figure
+				head
+				yrot
+				deltaAddDelta -0.02
 			blendType 0
 			}
 		valueParm JCM-lToeBendUp
 			{
 			name JCM-lToeBendUp
 			initValue 0
-			hidden 1
+			hidden 0
 			forceLimits 1
 			min 0
 			max 1
@@ -437,17 +508,17 @@ actor BODY:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lToe
-			xrot
-			deltaAddDelta -0.02
+				Figure
+				lToe
+				xrot
+				deltaAddDelta -0.02
 			blendType 0
 			}
 		valueParm JCM-rToeBendUp
 			{
 			name JCM-rToeBendUp
 			initValue 0
-			hidden 1
+			hidden 0
 			forceLimits 1
 			min 0
 			max 1
@@ -459,17 +530,17 @@ actor BODY:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rToe
-			xrot
-			deltaAddDelta -0.02
+				Figure
+				rToe
+				xrot
+				deltaAddDelta -0.02
 			blendType 0
 			}
 		valueParm JCM-lThumbGraspNeg
 			{
 			name JCM-lThumbGraspNeg
 			initValue 0
-			hidden 1
+			hidden 0
 			forceLimits 1
 			min 0
 			max 1
@@ -481,17 +552,17 @@ actor BODY:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lThumb1:1
-			xrot
-			deltaAddDelta -0.025
+				Figure
+				lThumb1:1
+				xrot
+				deltaAddDelta -0.025
 			blendType 0
 			}
 		valueParm JCM-lThumbGrasp
 			{
 			name JCM-lThumbGrasp
 			initValue 0
-			hidden 1
+			hidden 0
 			forceLimits 1
 			min 0
 			max 1
@@ -503,17 +574,17 @@ actor BODY:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lThumb1:1
-			xrot
-			deltaAddDelta 0.016
+				Figure
+				lThumb1:1
+				xrot
+				deltaAddDelta 0.016
 			blendType 0
 			}
 		valueParm JCM-lThumbSpread
 			{
 			name JCM-lThumbSpread
 			initValue 0
-			hidden 1
+			hidden 0
 			forceLimits 1
 			min 0
 			max 1
@@ -525,17 +596,17 @@ actor BODY:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lThumb1:1
-			yrot
-			deltaAddDelta -0.04
+				Figure
+				lThumb1:1
+				yrot
+				deltaAddDelta -0.04
 			blendType 0
 			}
 		valueParm JCM-rThumbGraspNeg
 			{
 			name JCM-rThumbGraspNeg
 			initValue 0
-			hidden 1
+			hidden 0
 			forceLimits 1
 			min 0
 			max 1
@@ -547,17 +618,17 @@ actor BODY:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rThumb1:1
-			xrot
-			deltaAddDelta -0.025
+				Figure
+				rThumb1:1
+				xrot
+				deltaAddDelta -0.025
 			blendType 0
 			}
 		valueParm JCM-rThumbGrasp
 			{
 			name JCM-rThumbGrasp
 			initValue 0
-			hidden 1
+			hidden 0
 			forceLimits 1
 			min 0
 			max 1
@@ -569,17 +640,17 @@ actor BODY:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rThumb1:1
-			xrot
-			deltaAddDelta 0.016
+				Figure
+				rThumb1:1
+				xrot
+				deltaAddDelta 0.016
 			blendType 0
 			}
 		valueParm JCM-rThumbSpread
 			{
 			name JCM-rThumbSpread
 			initValue 0
-			hidden 1
+			hidden 0
 			forceLimits 1
 			min 0
 			max 1
@@ -591,10 +662,658 @@ actor BODY:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rThumb1:1
-			yrot
-			deltaAddDelta 0.04
+				Figure
+				rThumb1:1
+				yrot
+				deltaAddDelta 0.04
+			blendType 0
+			}
+		valueParm JCM-rKneeBend
+			{
+			name JCM-rKneeBend
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rShin:1
+				xrot
+				deltaAddDelta 0.011111
+			blendType 0
+			}
+		valueParm JCM-rShldrUp
+			{
+			name JCM-rShldrUp
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1.5
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rShldr:1
+				zrot
+				deltaAddDelta -0.016667
+			blendType 0
+			}
+		valueParm JCM-lKneeBend-B
+			{
+			name JCM-lKneeBend-B
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1.5
+			valueOpDeltaAdd
+				Figure
+				lShin:1
+				xrot
+				deltaAddDelta 0.016667
+			blendType 0
+			}
+		valueParm JCM-rShldrDown
+			{
+			name JCM-rShldrDown
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1.5
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rShldr:1
+				zrot
+				deltaAddDelta 0.016667
+			blendType 0
+			}
+		valueParm JCM-rKneeBend-B
+			{
+			name JCM-rKneeBend-B
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1.5
+			valueOpDeltaAdd
+				Figure
+				rShin:1
+				xrot
+				deltaAddDelta 0.016667
+			blendType 0
+			}
+		valueParm JCM-lShldrDown
+			{
+			name JCM-lShldrDown
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1.5
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lShldr:1
+				zrot
+				deltaAddDelta -0.016667
+			blendType 0
+			}
+		valueParm JCM-lElbowBend
+			{
+			name JCM-lElbowBend
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 2
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lForeArm:1
+				yrot
+				deltaAddDelta -0.016667
+			blendType 0
+			}
+		valueParm JCM-lThighKick
+			{
+			name JCM-lThighKick
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -0.5
+			max 2.5
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lThigh:1
+				xrot
+				deltaAddDelta -0.016667
+			blendType 0
+			}
+		valueParm JCM-rShldrForw
+			{
+			name JCM-rShldrForw
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1.5
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rShldr:1
+				yrot
+				deltaAddDelta 0.016667
+			blendType 0
+			}
+		valueParm JCM-lShldrBack
+			{
+			name JCM-lShldrBack
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lShldr:1
+				yrot
+				deltaAddDelta 0.016667
+			blendType 0
+			}
+		valueParm JCM-lCollarUp
+			{
+			name JCM-lCollarUp
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -1
+			max 2
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lCollar:1
+				zrot
+				deltaAddDelta 0.04
+			blendType 0
+			}
+		valueParm JCM-lHandBack
+			{
+			name JCM-lHandBack
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lHand:1
+				yrot
+				deltaAddDelta 0.01
+			blendType 0
+			}
+		valueParm JCM-rElbowBend
+			{
+			name JCM-rElbowBend
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 2
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rForeArm:1
+				yrot
+				deltaAddDelta 0.016667
+			blendType 0
+			}
+		valueParm JCM-rThighKick
+			{
+			name JCM-rThighKick
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -0.5
+			max 2.5
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rThigh:1
+				xrot
+				deltaAddDelta -0.016667
+			blendType 0
+			}
+		valueParm JCM-HeadBack
+			{
+			name JCM-HeadBack
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				xrot
+				deltaAddDelta -0.02
+			blendType 0
+			}
+		valueParm JCM-rFootBend
+			{
+			name JCM-rFootBend
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -1
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rFoot:1
+				xrot
+				deltaAddDelta 0.02
+			blendType 0
+			}
+		valueParm JCM-rThighSpread
+			{
+			name JCM-rThighSpread
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -0.5
+			max 1.5
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rThigh:1
+				zrot
+				deltaAddDelta -0.016667
+			blendType 0
+			}
+		valueParm JCM-lShldrUp
+			{
+			name JCM-lShldrUp
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1.5
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lShldr:1
+				zrot
+				deltaAddDelta 0.016667
+			blendType 0
+			}
+		valueParm JCM-rHandBack
+			{
+			name JCM-rHandBack
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rHand:1
+				yrot
+				deltaAddDelta -0.01
+			blendType 0
+			}
+		valueParm JCM-rCollarUp
+			{
+			name JCM-rCollarUp
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -1
+			max 2
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rCollar:1
+				zrot
+				deltaAddDelta -0.04
+			blendType 0
+			}
+		valueParm JCM-lFootBend
+			{
+			name JCM-lFootBend
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -1
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lFoot:1
+				xrot
+				deltaAddDelta 0.02
+			blendType 0
+			}
+		valueParm JCM-rShldrTwistForw
+			{
+			name JCM-rShldrTwistForw
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -1
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rShldr:1
+				xrot
+				deltaAddDelta 0.011111
+			blendType 0
+			}
+		valueParm JCM-rShldrBack
+			{
+			name JCM-rShldrBack
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rShldr:1
+				yrot
+				deltaAddDelta -0.016667
+			blendType 0
+			}
+		valueParm JCM-lKneeBend
+			{
+			name JCM-lKneeBend
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lShin:1
+				xrot
+				deltaAddDelta 0.011111
+			blendType 0
+			}
+		valueParm JCM-lHandForw
+			{
+			name JCM-lHandForw
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lHand:1
+				yrot
+				deltaAddDelta -0.016
+			blendType 0
+			}
+		valueParm JCM-rHandForw
+			{
+			name JCM-rHandForw
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				rHand:1
+				yrot
+				deltaAddDelta 0.016
+			blendType 0
+			}
+		valueParm JCM-lThighSpread
+			{
+			name JCM-lThighSpread
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -0.5
+			max 1.5
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lThigh:1
+				zrot
+				deltaAddDelta 0.016667
+			blendType 0
+			}
+		valueParm JCM-lShldrForw
+			{
+			name JCM-lShldrForw
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1.5
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lShldr:1
+				yrot
+				deltaAddDelta -0.016667
+			blendType 0
+			}
+		valueParm JCM-lShldrTwistForw
+			{
+			name JCM-lShldrTwistForw
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -1
+			max 1
+			trackingScale 0.02
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				lShldr:1
+				xrot
+				deltaAddDelta 0.011111
 			blendType 0
 			}
 		valueParm PBMCC_00
@@ -1972,9 +2691,9 @@ actor hip:1
 			name JCM-rThighKick
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -0.5
-			max 2.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -1983,10 +2702,10 @@ actor hip:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rThigh:1
-			xrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-rThighKick
+				deltaAddDelta 1
 			indexes 162
 			numbDeltas 410
 			deltas
@@ -2160,9 +2879,9 @@ actor hip:1
 			name JCM-lThighKick
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -0.5
-			max 2.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -2171,10 +2890,10 @@ actor hip:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lThigh:1
-			xrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-lThighKick
+				deltaAddDelta 1
 			indexes 162
 			numbDeltas 410
 			deltas
@@ -3809,9 +4528,9 @@ actor hip2:1
 			name JCM-rThighKick
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -0.5
-			max 2.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -3820,10 +4539,10 @@ actor hip2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rThigh:1
-			xrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-rThighKick
+				deltaAddDelta 1
 			indexes 1376
 			numbDeltas 1591
 			deltas
@@ -5211,9 +5930,9 @@ actor hip2:1
 			name JCM-rThighSpread
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -0.5
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -5222,10 +5941,10 @@ actor hip2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rThigh:1
-			zrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-rThighSpread
+				deltaAddDelta 1
 			indexes 660
 			numbDeltas 1591
 			deltas
@@ -5897,9 +6616,9 @@ actor hip2:1
 			name JCM-lThighKick
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -0.5
-			max 2.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -5908,10 +6627,10 @@ actor hip2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lThigh:1
-			xrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-lThighKick
+				deltaAddDelta 1
 			indexes 1376
 			numbDeltas 1591
 			deltas
@@ -7299,9 +8018,9 @@ actor hip2:1
 			name JCM-lThighSpread
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -0.5
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -7310,10 +8029,10 @@ actor hip2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lThigh:1
-			zrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-lThighSpread
+				deltaAddDelta 1
 			indexes 660
 			numbDeltas 1591
 			deltas
@@ -8879,9 +9598,9 @@ actor rThigh:1
 			name JCM-rThighKick
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -0.5
-			max 2.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -8890,10 +9609,10 @@ actor rThigh:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rThigh:1
-			xrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-rThighKick
+				deltaAddDelta 1
 			indexes 366
 			numbDeltas 588
 			deltas
@@ -9271,9 +9990,9 @@ actor rThigh:1
 			name JCM-rThighSpread
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -0.5
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -9282,10 +10001,10 @@ actor rThigh:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rThigh:1
-			zrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-rThighSpread
+				deltaAddDelta 1
 			indexes 436
 			numbDeltas 588
 			deltas
@@ -9733,9 +10452,9 @@ actor rThigh:1
 			name JCM-lThighKick
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -0.5
-			max 2.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -9744,10 +10463,10 @@ actor rThigh:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lThigh:1
-			xrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-lThighKick
+				deltaAddDelta 1
 			indexes 46
 			numbDeltas 588
 			deltas
@@ -9805,9 +10524,9 @@ actor rThigh:1
 			name JCM-rKneeBend
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -9816,10 +10535,10 @@ actor rThigh:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShin:1
-			xrot
-			deltaAddDelta 0.011111
+				Figure
+				BODY:1
+				JCM-rKneeBend
+				deltaAddDelta 1
 			indexes 389
 			numbDeltas 588
 			deltas
@@ -10220,9 +10939,9 @@ actor rThigh:1
 			name JCM-rKneeBend-B
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -10231,15 +10950,10 @@ actor rThigh:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1.5
-			valueOpDeltaAdd
-			Figure
-			rShin:1
-			xrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-rKneeBend-B
+				deltaAddDelta 1
 			indexes 465
 			numbDeltas 588
 			deltas
@@ -11257,9 +11971,9 @@ actor rShin:1
 			name JCM-rFootBend
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -11268,10 +11982,10 @@ actor rShin:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rFoot:1
-			xrot
-			deltaAddDelta 0.02
+				Figure
+				BODY:1
+				JCM-rFootBend
+				deltaAddDelta 1
 			indexes 84
 			numbDeltas 642
 			deltas
@@ -11587,9 +12301,9 @@ actor rShin:1
 			name JCM-rKneeBend
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -11598,10 +12312,10 @@ actor rShin:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShin:1
-			xrot
-			deltaAddDelta 0.011111
+				Figure
+				BODY:1
+				JCM-rKneeBend
+				deltaAddDelta 1
 			indexes 319
 			numbDeltas 642
 			deltas
@@ -11932,9 +12646,9 @@ actor rShin:1
 			name JCM-rKneeBend-B
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -11943,15 +12657,10 @@ actor rShin:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1.5
-			valueOpDeltaAdd
-			Figure
-			rShin:1
-			xrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-rKneeBend-B
+				deltaAddDelta 1
 			indexes 424
 			numbDeltas 642
 			deltas
@@ -12420,16 +13129,22 @@ actor rShin:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles 73.539 -11.681 -146.262 110.855
+			angles 90 90 90 90
 			otherActor rFoot:1
 			matrixActor NULL
 			center -0.079 0.024 -0.018
 			flipped
-			doBulge 1
-			posBulgeLeft 0.035
-			posBulgeRight -0.04
-			negBulgeLeft -0.035
-			negBulgeRight 0.025
+			sphereMatsRaw
+			0.0658 0 0 0
+			0 0.0658003 0 0
+			0 0 0.0658003 0
+			-0.0827227 -0.0145376 0.0575207 1
+
+			7.68095e-012 0.0855404 0 0
+			-0.0855403 7.68094e-012 0 0
+			0 0 0.0855404 0
+			-0.0736598 -0.0272683 0.0511031 1
+			doBulge 0
 			jointMult 1
 			calcWeights
 			}
@@ -12457,7 +13172,7 @@ actor rShin:1
 			posBulgeLeft 0.03
 			posBulgeRight -0.05
 			negBulgeLeft -0.03
-			negBulgeRight 0.1
+			negBulgeRight 0.065
 			jointMult 1
 			calcWeights
 			}
@@ -12901,9 +13616,9 @@ actor rFoot:1
 			name JCM-rFootBend
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -12912,10 +13627,10 @@ actor rFoot:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rFoot:1
-			xrot
-			deltaAddDelta 0.02
+				Figure
+				BODY:1
+				JCM-rFootBend
+				deltaAddDelta 1
 			indexes 300
 			numbDeltas 492
 			deltas
@@ -13674,7 +14389,7 @@ actor rFoot:1
 			posBulgeLeft 0.03
 			posBulgeRight -0.05
 			negBulgeLeft -0.03
-			negBulgeRight 0.1
+			negBulgeRight 0.065
 			jointMult 1
 			calcWeights
 			}
@@ -13693,15 +14408,21 @@ actor rFoot:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles 73.539 -11.681 -146.262 110.855
+			angles 90 90 90 90
 			otherActor rShin:1
 			matrixActor NULL
 			center -0.079 0.024 -0.018
-			doBulge 1
-			posBulgeLeft 0.035
-			posBulgeRight -0.04
-			negBulgeLeft -0.035
-			negBulgeRight 0.025
+			sphereMatsRaw
+			0.0658 0 0 0
+			0 0.0658003 0 0
+			0 0 0.0658003 0
+			-0.0827227 -0.0145376 0.0575207 1
+
+			7.68095e-012 0.0855404 0 0
+			-0.0855403 7.68094e-012 0 0
+			0 0 0.0855404 0
+			-0.0736598 -0.0272683 0.0511031 1
+			doBulge 0
 			jointMult 1
 			calcWeights
 			}
@@ -13939,10 +14660,10 @@ actor rInstep:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-rToeBendUp
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-rToeBendUp
+				deltaAddDelta 1
 			indexes 134
 			numbDeltas 640
 			deltas
@@ -14320,10 +15041,10 @@ actor rInstep:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			Toecaps-gone
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				Toecaps-gone
+				deltaAddDelta 1
 			indexes 320
 			numbDeltas 640
 			deltas
@@ -14812,15 +15533,15 @@ actor rInstep:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rFoot:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rFoot:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -15154,10 +15875,10 @@ actor rToe:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-rToeBendUp
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-rToeBendUp
+				deltaAddDelta 1
 			indexes 732
 			numbDeltas 2100
 			deltas
@@ -18712,10 +19433,10 @@ actor rToe:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			Toecaps-gone
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				Toecaps-gone
+				deltaAddDelta 1
 			indexes 666
 			numbDeltas 2100
 			deltas
@@ -19585,15 +20306,15 @@ actor rToe:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rInstep:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rInstep:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -19927,10 +20648,10 @@ actor rBigToe1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rToe
-			ToeCurl
-			deltaAddDelta 1
+				Figure
+				rToe
+				ToeCurl
+				deltaAddDelta 1
 			indexes 69
 			numbDeltas 336
 			deltas
@@ -20023,10 +20744,10 @@ actor rBigToe1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-rToeBendUp
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-rToeBendUp
+				deltaAddDelta 1
 			indexes 146
 			numbDeltas 336
 			deltas
@@ -20416,10 +21137,10 @@ actor rBigToe1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			Toecaps-gone
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				Toecaps-gone
+				deltaAddDelta 1
 			indexes 174
 			numbDeltas 336
 			deltas
@@ -20781,15 +21502,15 @@ actor rBigToe1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rToe:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rToe:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -21139,10 +21860,10 @@ actor rBigToe2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rToe
-			ToeCurl
-			deltaAddDelta 1
+				Figure
+				rToe
+				ToeCurl
+				deltaAddDelta 1
 			indexes 37
 			numbDeltas 274
 			deltas
@@ -21203,10 +21924,10 @@ actor rBigToe2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-rToeBendUp
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-rToeBendUp
+				deltaAddDelta 1
 			indexes 23
 			numbDeltas 274
 			deltas
@@ -21473,10 +22194,10 @@ actor rBigToe2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			Toecaps-gone
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				Toecaps-gone
+				deltaAddDelta 1
 			indexes 95
 			numbDeltas 274
 			deltas
@@ -21664,15 +22385,15 @@ actor rBigToe2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rBigToe1:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rBigToe1:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -22215,9 +22936,9 @@ actor lThigh:1
 			name JCM-rThighKick
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -0.5
-			max 2.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -22226,10 +22947,10 @@ actor lThigh:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rThigh:1
-			xrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-rThighKick
+				deltaAddDelta 1
 			indexes 46
 			numbDeltas 588
 			deltas
@@ -22287,9 +23008,9 @@ actor lThigh:1
 			name JCM-lThighKick
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -0.5
-			max 2.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -22298,10 +23019,10 @@ actor lThigh:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lThigh:1
-			xrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-lThighKick
+				deltaAddDelta 1
 			indexes 366
 			numbDeltas 588
 			deltas
@@ -22679,9 +23400,9 @@ actor lThigh:1
 			name JCM-lThighSpread
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -0.5
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -22690,10 +23411,10 @@ actor lThigh:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lThigh:1
-			zrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-lThighSpread
+				deltaAddDelta 1
 			indexes 588
 			numbDeltas 588
 			deltas
@@ -23293,9 +24014,9 @@ actor lThigh:1
 			name JCM-lKneeBend
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -23304,10 +24025,10 @@ actor lThigh:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShin:1
-			xrot
-			deltaAddDelta 0.011111
+				Figure
+				BODY:1
+				JCM-lKneeBend
+				deltaAddDelta 1
 			indexes 389
 			numbDeltas 588
 			deltas
@@ -23708,9 +24429,9 @@ actor lThigh:1
 			name JCM-lKneeBend-B
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -23719,15 +24440,10 @@ actor lThigh:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1.5
-			valueOpDeltaAdd
-			Figure
-			lShin:1
-			xrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-lKneeBend-B
+				deltaAddDelta 1
 			indexes 465
 			numbDeltas 588
 			deltas
@@ -24745,9 +25461,9 @@ actor lShin:1
 			name JCM-lFootBend
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -1
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -24756,10 +25472,10 @@ actor lShin:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lFoot:1
-			xrot
-			deltaAddDelta 0.02
+				Figure
+				BODY:1
+				JCM-lFootBend
+				deltaAddDelta 1
 			indexes 84
 			numbDeltas 642
 			deltas
@@ -25075,9 +25791,9 @@ actor lShin:1
 			name JCM-lKneeBend
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -25086,10 +25802,10 @@ actor lShin:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShin:1
-			xrot
-			deltaAddDelta 0.011111
+				Figure
+				BODY:1
+				JCM-lKneeBend
+				deltaAddDelta 1
 			indexes 319
 			numbDeltas 642
 			deltas
@@ -25420,9 +26136,9 @@ actor lShin:1
 			name JCM-lKneeBend-B
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -25431,15 +26147,10 @@ actor lShin:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1.5
-			valueOpDeltaAdd
-			Figure
-			lShin:1
-			xrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-lKneeBend-B
+				deltaAddDelta 1
 			indexes 424
 			numbDeltas 642
 			deltas
@@ -25908,16 +26619,22 @@ actor lShin:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles 69.145 -33.738 -168.319 106.461
+			angles 90 90 90 90
 			otherActor lFoot:1
 			matrixActor NULL
 			center 0.079 0.024 -0.018
 			flipped
-			doBulge 1
-			posBulgeLeft 0.025
-			posBulgeRight -0.035
-			negBulgeLeft -0.04
-			negBulgeRight 0.035
+			sphereMatsRaw
+			-0.0658 0 0 0
+			0 0.0658003 0 0
+			0 0 0.0658003 0
+			0.0827227 -0.0145376 0.0575207 1
+
+			-7.68095e-012 0.0855404 0 0
+			0.0855403 7.68094e-012 0 0
+			0 0 0.0855404 0
+			0.0736598 -0.0272683 0.0511031 1
+			doBulge 0
 			jointMult 1
 			calcWeights
 			}
@@ -25945,7 +26662,7 @@ actor lShin:1
 			posBulgeLeft 0.03
 			posBulgeRight -0.05
 			negBulgeLeft -0.03
-			negBulgeRight 0.1
+			negBulgeRight 0.065
 			jointMult 1
 			calcWeights
 			}
@@ -26389,9 +27106,9 @@ actor lFoot:1
 			name JCM-lFootBend
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -1
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -26400,10 +27117,10 @@ actor lFoot:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lFoot:1
-			xrot
-			deltaAddDelta 0.02
+				Figure
+				BODY:1
+				JCM-lFootBend
+				deltaAddDelta 1
 			indexes 300
 			numbDeltas 492
 			deltas
@@ -27162,7 +27879,7 @@ actor lFoot:1
 			posBulgeLeft 0.03
 			posBulgeRight -0.05
 			negBulgeLeft -0.03
-			negBulgeRight 0.1
+			negBulgeRight 0.065
 			jointMult 1
 			calcWeights
 			}
@@ -27181,15 +27898,21 @@ actor lFoot:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles 69.145 -33.738 -168.319 106.461
+			angles 90 90 90 90
 			otherActor lShin:1
 			matrixActor NULL
 			center 0.079 0.024 -0.018
-			doBulge 1
-			posBulgeLeft 0.025
-			posBulgeRight -0.035
-			negBulgeLeft -0.04
-			negBulgeRight 0.035
+			sphereMatsRaw
+			-0.0658 0 0 0
+			0 0.0658003 0 0
+			0 0 0.0658003 0
+			0.0827227 -0.0145376 0.0575207 1
+
+			-7.68095e-012 0.0855404 0 0
+			0.0855403 7.68094e-012 0 0
+			0 0 0.0855404 0
+			0.0736598 -0.0272683 0.0511031 1
+			doBulge 0
 			jointMult 1
 			calcWeights
 			}
@@ -27427,10 +28150,10 @@ actor lInstep:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-lToeBendUp
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-lToeBendUp
+				deltaAddDelta 1
 			indexes 134
 			numbDeltas 640
 			deltas
@@ -27808,10 +28531,10 @@ actor lInstep:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			Toecaps-gone
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				Toecaps-gone
+				deltaAddDelta 1
 			indexes 320
 			numbDeltas 640
 			deltas
@@ -28300,15 +29023,15 @@ actor lInstep:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lFoot:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lFoot:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -28642,10 +29365,10 @@ actor lToe:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-lToeBendUp
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-lToeBendUp
+				deltaAddDelta 1
 			indexes 732
 			numbDeltas 2100
 			deltas
@@ -32200,10 +32923,10 @@ actor lToe:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			Toecaps-gone
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				Toecaps-gone
+				deltaAddDelta 1
 			indexes 666
 			numbDeltas 2100
 			deltas
@@ -33073,15 +33796,15 @@ actor lToe:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lInstep:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lInstep:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -33415,10 +34138,10 @@ actor lBigToe1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lToe
-			ToeCurl
-			deltaAddDelta 1
+				Figure
+				lToe
+				ToeCurl
+				deltaAddDelta 1
 			indexes 69
 			numbDeltas 336
 			deltas
@@ -33511,10 +34234,10 @@ actor lBigToe1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-lToeBendUp
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-lToeBendUp
+				deltaAddDelta 1
 			indexes 146
 			numbDeltas 336
 			deltas
@@ -33904,10 +34627,10 @@ actor lBigToe1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			Toecaps-gone
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				Toecaps-gone
+				deltaAddDelta 1
 			indexes 174
 			numbDeltas 336
 			deltas
@@ -34269,15 +34992,15 @@ actor lBigToe1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lToe:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lToe:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -34627,10 +35350,10 @@ actor lBigToe2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lToe
-			ToeCurl
-			deltaAddDelta 1
+				Figure
+				lToe
+				ToeCurl
+				deltaAddDelta 1
 			indexes 37
 			numbDeltas 274
 			deltas
@@ -34691,10 +35414,10 @@ actor lBigToe2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-lToeBendUp
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-lToeBendUp
+				deltaAddDelta 1
 			indexes 23
 			numbDeltas 274
 			deltas
@@ -34961,10 +35684,10 @@ actor lBigToe2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			Toecaps-gone
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				Toecaps-gone
+				deltaAddDelta 1
 			indexes 95
 			numbDeltas 274
 			deltas
@@ -35152,15 +35875,15 @@ actor lBigToe2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lBigToe1:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lBigToe1:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -36208,9 +36931,9 @@ actor chest:1
 			name JCM-HeadBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -36219,10 +36942,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			xrot
-			deltaAddDelta -0.02
+				Figure
+				BODY:1
+				JCM-HeadBack
+				deltaAddDelta 1
 			indexes 376
 			numbDeltas 1102
 			deltas
@@ -36621,10 +37344,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-HeadTurnLeft
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-HeadTurnLeft
+				deltaAddDelta 1
 			indexes 273
 			numbDeltas 1102
 			deltas
@@ -36921,10 +37644,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-HeadTurnRight
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-HeadTurnRight
+				deltaAddDelta 1
 			indexes 273
 			numbDeltas 1102
 			deltas
@@ -37210,9 +37933,9 @@ actor chest:1
 			name JCM-rCollarUp
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -1
-			max 2
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -37221,10 +37944,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rCollar:1
-			zrot
-			deltaAddDelta -0.04
+				Figure
+				BODY:1
+				JCM-rCollarUp
+				deltaAddDelta 1
 			indexes 431
 			numbDeltas 1102
 			deltas
@@ -37667,9 +38390,9 @@ actor chest:1
 			name JCM-lCollarUp
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -1
-			max 2
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -37678,10 +38401,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lCollar:1
-			zrot
-			deltaAddDelta 0.04
+				Figure
+				BODY:1
+				JCM-lCollarUp
+				deltaAddDelta 1
 			indexes 431
 			numbDeltas 1102
 			deltas
@@ -38387,10 +39110,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			chest:1
-			Breasts-classic
-			deltaAddDelta 1
+				Figure
+				chest:1
+				Breasts-classic
+				deltaAddDelta 1
 			indexes 136
 			numbDeltas 1102
 			deltas
@@ -38538,9 +39261,9 @@ actor chest:1
 			name JCM-rShldrBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -38549,10 +39272,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			yrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-rShldrBack
+				deltaAddDelta 1
 			indexes 84
 			numbDeltas 1102
 			deltas
@@ -38648,9 +39371,9 @@ actor chest:1
 			name JCM-lShldrBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -38659,10 +39382,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			yrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-lShldrBack
+				deltaAddDelta 1
 			indexes 84
 			numbDeltas 1102
 			deltas
@@ -38758,9 +39481,9 @@ actor chest:1
 			name JCM-rShldrDown
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -38769,10 +39492,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			zrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-rShldrDown
+				deltaAddDelta 1
 			indexes 116
 			numbDeltas 1102
 			deltas
@@ -38900,9 +39623,9 @@ actor chest:1
 			name JCM-rShldrUp
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -38911,10 +39634,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			zrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-rShldrUp
+				deltaAddDelta 1
 			indexes 206
 			numbDeltas 1102
 			deltas
@@ -39132,9 +39855,9 @@ actor chest:1
 			name JCM-rShldrForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -39143,10 +39866,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			yrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-rShldrForw
+				deltaAddDelta 1
 			indexes 172
 			numbDeltas 1102
 			deltas
@@ -39330,9 +40053,9 @@ actor chest:1
 			name JCM-lShldrDown
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -39341,10 +40064,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			zrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-lShldrDown
+				deltaAddDelta 1
 			indexes 116
 			numbDeltas 1102
 			deltas
@@ -39472,9 +40195,9 @@ actor chest:1
 			name JCM-lShldrUp
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -39483,10 +40206,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			zrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-lShldrUp
+				deltaAddDelta 1
 			indexes 206
 			numbDeltas 1102
 			deltas
@@ -39704,9 +40427,9 @@ actor chest:1
 			name JCM-lShldrForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -39715,10 +40438,10 @@ actor chest:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			yrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-lShldrForw
+				deltaAddDelta 1
 			indexes 172
 			numbDeltas 1102
 			deltas
@@ -40657,9 +41380,9 @@ actor neck:1
 			name JCM-HeadBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -40668,10 +41391,10 @@ actor neck:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			xrot
-			deltaAddDelta -0.02
+				Figure
+				BODY:1
+				JCM-HeadBack
+				deltaAddDelta 1
 			indexes 212
 			numbDeltas 212
 			deltas
@@ -40906,10 +41629,10 @@ actor neck:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-HeadTurnLeft
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-HeadTurnLeft
+				deltaAddDelta 1
 			indexes 212
 			numbDeltas 212
 			deltas
@@ -41145,10 +41868,10 @@ actor neck:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-HeadTurnRight
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-HeadTurnRight
+				deltaAddDelta 1
 			indexes 212
 			numbDeltas 212
 			deltas
@@ -41373,9 +42096,9 @@ actor neck:1
 			name JCM-rCollarUp
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -1
-			max 2
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -41384,10 +42107,10 @@ actor neck:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rCollar:1
-			zrot
-			deltaAddDelta -0.04
+				Figure
+				BODY:1
+				JCM-rCollarUp
+				deltaAddDelta 1
 			indexes 37
 			numbDeltas 212
 			deltas
@@ -41436,9 +42159,9 @@ actor neck:1
 			name JCM-lCollarUp
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -1
-			max 2
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -41447,10 +42170,10 @@ actor neck:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lCollar:1
-			zrot
-			deltaAddDelta 0.04
+				Figure
+				BODY:1
+				JCM-lCollarUp
+				deltaAddDelta 1
 			indexes 37
 			numbDeltas 212
 			deltas
@@ -41911,10 +42634,10 @@ actor neck:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			CTRLHeadGrow
-			deltaAddDelta 0.6
+				Figure
+				head:1
+				CTRLHeadGrow
+				deltaAddDelta 0.6
 			}
 		scaleX xScale
 			{
@@ -42233,9 +42956,9 @@ actor head:1
 			name JCM-HeadBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -42244,10 +42967,10 @@ actor head:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			xrot
-			deltaAddDelta -0.02
+				Figure
+				BODY:1
+				JCM-HeadBack
+				deltaAddDelta 1
 			indexes 334
 			numbDeltas 6487
 			deltas
@@ -42604,10 +43327,10 @@ actor head:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-HeadTurnLeft
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-HeadTurnLeft
+				deltaAddDelta 1
 			indexes 192
 			numbDeltas 6487
 			deltas
@@ -42823,10 +43546,10 @@ actor head:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY
-			JCM-HeadTurnRight
-			deltaAddDelta 1
+				Figure
+				BODY
+				JCM-HeadTurnRight
+				deltaAddDelta 1
 			indexes 192
 			numbDeltas 6487
 			deltas
@@ -44393,10 +45116,10 @@ actor head:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			CTRLHeadGrow
-			deltaAddDelta 1
+				Figure
+				head:1
+				CTRLHeadGrow
+				deltaAddDelta 1
 			}
 		scaleX xScale
 			{
@@ -45022,10 +45745,10 @@ actor lEye:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			CTRLHeadGrow
-			deltaAddDelta 1
+				Figure
+				head:1
+				CTRLHeadGrow
+				deltaAddDelta 1
 			}
 		scaleX xScale
 			{
@@ -45107,10 +45830,10 @@ actor lEye:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			CTRLEyesLeftRight
-			deltaAddDelta 17
+				Figure
+				head:1
+				CTRLEyesLeftRight
+				deltaAddDelta 17
 			}
 		rotateX xrot
 			{
@@ -45128,10 +45851,10 @@ actor lEye:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			CTRLEyesUpDown
-			deltaAddDelta -25
+				Figure
+				head:1
+				CTRLEyesUpDown
+				deltaAddDelta -25
 			}
 		xOffsetB xTranB
 			{
@@ -45575,10 +46298,10 @@ actor rEye:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			CTRLHeadGrow
-			deltaAddDelta 1
+				Figure
+				head:1
+				CTRLHeadGrow
+				deltaAddDelta 1
 			}
 		scaleX xScale
 			{
@@ -45660,10 +46383,10 @@ actor rEye:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			CTRLEyesLeftRight
-			deltaAddDelta 16
+				Figure
+				head:1
+				CTRLEyesLeftRight
+				deltaAddDelta 16
 			}
 		rotateX xrot
 			{
@@ -45681,10 +46404,10 @@ actor rEye:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			CTRLEyesUpDown
-			deltaAddDelta -25
+				Figure
+				head:1
+				CTRLEyesUpDown
+				deltaAddDelta -25
 			}
 		xOffsetB xTranB
 			{
@@ -46121,10 +46844,10 @@ actor jawLower:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			CTRLHeadGrow
-			deltaAddDelta 1
+				Figure
+				head:1
+				CTRLHeadGrow
+				deltaAddDelta 1
 			}
 		scaleX xScale
 			{
@@ -46755,10 +47478,10 @@ actor tongue1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			CTRLHeadGrow
-			deltaAddDelta 1
+				Figure
+				head:1
+				CTRLHeadGrow
+				deltaAddDelta 1
 			}
 		scaleX xScale
 			{
@@ -47310,10 +48033,10 @@ actor tongue2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			CTRLHeadGrow
-			deltaAddDelta 1
+				Figure
+				head:1
+				CTRLHeadGrow
+				deltaAddDelta 1
 			}
 		scaleX xScale
 			{
@@ -47914,10 +48637,10 @@ actor jawUpper:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			CTRLHeadGrow
-			deltaAddDelta 1
+				Figure
+				head:1
+				CTRLHeadGrow
+				deltaAddDelta 1
 			}
 		scaleX xScale
 			{
@@ -48168,9 +48891,9 @@ actor lCollar:1
 			name JCM-HeadBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -48179,10 +48902,10 @@ actor lCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			xrot
-			deltaAddDelta -0.02
+				Figure
+				BODY:1
+				JCM-HeadBack
+				deltaAddDelta 1
 			indexes 33
 			numbDeltas 1050
 			deltas
@@ -48227,9 +48950,9 @@ actor lCollar:1
 			name JCM-lCollarUp
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -1
-			max 2
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -48238,10 +48961,10 @@ actor lCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lCollar:1
-			zrot
-			deltaAddDelta 0.04
+				Figure
+				BODY:1
+				JCM-lCollarUp
+				deltaAddDelta 1
 			indexes 623
 			numbDeltas 1050
 			deltas
@@ -49297,10 +50020,10 @@ actor lCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			chest:1
-			Breasts-classic
-			deltaAddDelta 1
+				Figure
+				chest:1
+				Breasts-classic
+				deltaAddDelta 1
 			indexes 501
 			numbDeltas 1050
 			deltas
@@ -49824,10 +50547,10 @@ actor lCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			chest:1
-			Nipples-classic
-			deltaAddDelta 1
+				Figure
+				chest:1
+				Nipples-classic
+				deltaAddDelta 1
 			indexes 105
 			numbDeltas 1050
 			deltas
@@ -49944,9 +50667,9 @@ actor lCollar:1
 			name JCM-lShldrBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -49955,10 +50678,10 @@ actor lCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			yrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-lShldrBack
+				deltaAddDelta 1
 			indexes 574
 			numbDeltas 1050
 			deltas
@@ -50544,9 +51267,9 @@ actor lCollar:1
 			name JCM-lShldrTwistForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -1
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -50555,10 +51278,10 @@ actor lCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			xrot
-			deltaAddDelta 0.011111
+				Figure
+				BODY:1
+				JCM-lShldrTwistForw
+				deltaAddDelta 1
 			indexes 270
 			numbDeltas 1050
 			deltas
@@ -50840,9 +51563,9 @@ actor lCollar:1
 			name JCM-lShldrDown
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -50851,10 +51574,10 @@ actor lCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			zrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-lShldrDown
+				deltaAddDelta 1
 			indexes 636
 			numbDeltas 1050
 			deltas
@@ -51502,9 +52225,9 @@ actor lCollar:1
 			name JCM-lShldrUp
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -51513,10 +52236,10 @@ actor lCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			zrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-lShldrUp
+				deltaAddDelta 1
 			indexes 722
 			numbDeltas 1050
 			deltas
@@ -52250,9 +52973,9 @@ actor lCollar:1
 			name JCM-lShldrForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -52261,10 +52984,10 @@ actor lCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			yrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-lShldrForw
+				deltaAddDelta 1
 			indexes 598
 			numbDeltas 1050
 			deltas
@@ -53649,9 +54372,9 @@ actor lShldr:1
 			name JCM-lShldrBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -53660,10 +54383,10 @@ actor lShldr:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			yrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-lShldrBack
+				deltaAddDelta 1
 			indexes 51
 			numbDeltas 320
 			deltas
@@ -53726,9 +54449,9 @@ actor lShldr:1
 			name JCM-lShldrTwistForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -1
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -53737,10 +54460,10 @@ actor lShldr:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			xrot
-			deltaAddDelta 0.011111
+				Figure
+				BODY:1
+				JCM-lShldrTwistForw
+				deltaAddDelta 1
 			indexes 274
 			numbDeltas 320
 			deltas
@@ -54026,9 +54749,9 @@ actor lShldr:1
 			name JCM-lElbowBend
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 2
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -54037,10 +54760,10 @@ actor lShldr:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lForeArm:1
-			yrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-lElbowBend
+				deltaAddDelta 1
 			indexes 254
 			numbDeltas 320
 			deltas
@@ -54306,9 +55029,9 @@ actor lShldr:1
 			name JCM-lShldrDown
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -54317,10 +55040,10 @@ actor lShldr:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			zrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-lShldrDown
+				deltaAddDelta 1
 			indexes 103
 			numbDeltas 320
 			deltas
@@ -54435,9 +55158,9 @@ actor lShldr:1
 			name JCM-lShldrUp
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -54446,10 +55169,10 @@ actor lShldr:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			zrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-lShldrUp
+				deltaAddDelta 1
 			indexes 66
 			numbDeltas 320
 			deltas
@@ -54527,9 +55250,9 @@ actor lShldr:1
 			name JCM-lShldrForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -54538,10 +55261,10 @@ actor lShldr:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lShldr:1
-			yrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-lShldrForw
+				deltaAddDelta 1
 			indexes 101
 			numbDeltas 320
 			deltas
@@ -55181,9 +55904,9 @@ actor lForeArm:1
 			name JCM-lHandBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -55192,10 +55915,10 @@ actor lForeArm:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			yrot
-			deltaAddDelta 0.01
+				Figure
+				BODY:1
+				JCM-lHandBack
+				deltaAddDelta 1
 			indexes 128
 			numbDeltas 456
 			deltas
@@ -55335,9 +56058,9 @@ actor lForeArm:1
 			name JCM-lHandForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -55346,10 +56069,10 @@ actor lForeArm:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			yrot
-			deltaAddDelta -0.016
+				Figure
+				BODY:1
+				JCM-lHandForw
+				deltaAddDelta 1
 			indexes 124
 			numbDeltas 456
 			deltas
@@ -55705,9 +56428,9 @@ actor lForeArm:1
 			name JCM-lElbowBend
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 2
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -55716,10 +56439,10 @@ actor lForeArm:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lForeArm:1
-			yrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-lElbowBend
+				deltaAddDelta 1
 			indexes 150
 			numbDeltas 456
 			deltas
@@ -56401,10 +57124,10 @@ actor lHand:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-lThumbGraspNeg
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-lThumbGraspNeg
+				deltaAddDelta 1
 			indexes 446
 			numbDeltas 1148
 			deltas
@@ -56874,10 +57597,10 @@ actor lHand:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-lThumbGrasp
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-lThumbGrasp
+				deltaAddDelta 1
 			indexes 440
 			numbDeltas 1148
 			deltas
@@ -57341,10 +58064,10 @@ actor lHand:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-lThumbSpread
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-lThumbSpread
+				deltaAddDelta 1
 			indexes 173
 			numbDeltas 1148
 			deltas
@@ -57530,9 +58253,9 @@ actor lHand:1
 			name JCM-lHandBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -57541,10 +58264,10 @@ actor lHand:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			yrot
-			deltaAddDelta 0.01
+				Figure
+				BODY:1
+				JCM-lHandBack
+				deltaAddDelta 1
 			indexes 304
 			numbDeltas 1148
 			deltas
@@ -57860,9 +58583,9 @@ actor lHand:1
 			name JCM-lHandForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -57871,10 +58594,10 @@ actor lHand:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			yrot
-			deltaAddDelta -0.016
+				Figure
+				BODY:1
+				JCM-lHandForw
+				deltaAddDelta 1
 			indexes 239
 			numbDeltas 1148
 			deltas
@@ -59692,15 +60415,15 @@ actor lIndex1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lHand:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -59874,15 +60597,15 @@ actor lIndex1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta 6
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta 6
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandSpread
-			deltaAddDelta -16
+				Figure
+				lHand:1
+				CTRLLHandSpread
+				deltaAddDelta -16
 			}
 		rotateZ zrot
 			{
@@ -59900,10 +60623,10 @@ actor lIndex1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -75
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -75
 			}
 		xOffsetB xTranB
 			{
@@ -60450,15 +61173,15 @@ actor lIndex2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lIndex1:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lIndex1:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -60624,10 +61347,10 @@ actor lIndex2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -100
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -100
 			}
 		xOffsetB xTranB
 			{
@@ -61083,15 +61806,15 @@ actor lIndex3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lIndex2:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lIndex2:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -61257,10 +61980,10 @@ actor lIndex3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -70
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -70
 			}
 		xOffsetB xTranB
 			{
@@ -61788,15 +62511,15 @@ actor lMid1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lHand:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -61986,10 +62709,10 @@ actor lMid1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -75
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -75
 			}
 		xOffsetB xTranB
 			{
@@ -62536,15 +63259,15 @@ actor lMid2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lMid1:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lMid1:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -62710,10 +63433,10 @@ actor lMid2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -100
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -100
 			}
 		xOffsetB xTranB
 			{
@@ -63169,15 +63892,15 @@ actor lMid3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lMid2:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lMid2:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -63343,10 +64066,10 @@ actor lMid3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -70
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -70
 			}
 		xOffsetB xTranB
 			{
@@ -63874,15 +64597,15 @@ actor lRing1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lHand:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -64056,15 +64779,15 @@ actor lRing1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -6
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -6
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandSpread
-			deltaAddDelta 15
+				Figure
+				lHand:1
+				CTRLLHandSpread
+				deltaAddDelta 15
 			}
 		rotateZ zrot
 			{
@@ -64082,10 +64805,10 @@ actor lRing1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -75
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -75
 			}
 		xOffsetB xTranB
 			{
@@ -64632,15 +65355,15 @@ actor lRing2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lRing1:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lRing1:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -64806,10 +65529,10 @@ actor lRing2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -100
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -100
 			}
 		xOffsetB xTranB
 			{
@@ -65265,15 +65988,15 @@ actor lRing3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lRing2:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lRing2:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -65439,10 +66162,10 @@ actor lRing3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -70
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -70
 			}
 		xOffsetB xTranB
 			{
@@ -65608,10 +66331,10 @@ actor lThumb1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-lThumbGraspNeg
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-lThumbGraspNeg
+				deltaAddDelta 1
 			indexes 134
 			numbDeltas 170
 			deltas
@@ -65769,10 +66492,10 @@ actor lThumb1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-lThumbGrasp
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-lThumbGrasp
+				deltaAddDelta 1
 			indexes 134
 			numbDeltas 170
 			deltas
@@ -65930,10 +66653,10 @@ actor lThumb1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-lThumbSpread
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-lThumbSpread
+				deltaAddDelta 1
 			indexes 95
 			numbDeltas 170
 			deltas
@@ -66400,15 +67123,15 @@ actor lThumb1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lHand:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -66578,15 +67301,15 @@ actor lThumb1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbGrasp
-			deltaAddDelta 80
+				Figure
+				lHand:1
+				CTRLLThumbGrasp
+				deltaAddDelta 80
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbCurl
-			deltaAddDelta 52.9868
+				Figure
+				lHand:1
+				CTRLLThumbCurl
+				deltaAddDelta 52.9868
 			}
 		rotateY yrot
 			{
@@ -66604,15 +67327,15 @@ actor lThumb1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbGrasp
-			deltaAddDelta -6
+				Figure
+				lHand:1
+				CTRLLThumbGrasp
+				deltaAddDelta -6
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbCurl
-			deltaAddDelta 16.0205
+				Figure
+				lHand:1
+				CTRLLThumbCurl
+				deltaAddDelta 16.0205
 			}
 		rotateZ zrot
 			{
@@ -66794,10 +67517,10 @@ actor lThumb2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-lThumbSpread
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-lThumbSpread
+				deltaAddDelta 1
 			indexes 29
 			numbDeltas 140
 			deltas
@@ -67237,15 +67960,15 @@ actor lThumb2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lThumb1:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lThumb1:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -67385,15 +68108,15 @@ actor lThumb2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbGrasp
-			deltaAddDelta 11
+				Figure
+				lHand:1
+				CTRLLThumbGrasp
+				deltaAddDelta 11
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbCurl
-			deltaAddDelta -20.0141
+				Figure
+				lHand:1
+				CTRLLThumbCurl
+				deltaAddDelta -20.0141
 			}
 		rotateY yrot
 			{
@@ -67411,15 +68134,15 @@ actor lThumb2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbGrasp
-			deltaAddDelta -5
+				Figure
+				lHand:1
+				CTRLLThumbGrasp
+				deltaAddDelta -5
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbCurl
-			deltaAddDelta -5.01305
+				Figure
+				lHand:1
+				CTRLLThumbCurl
+				deltaAddDelta -5.01305
 			}
 		rotateZ zrot
 			{
@@ -67437,15 +68160,15 @@ actor lThumb2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbGrasp
-			deltaAddDelta -30
+				Figure
+				lHand:1
+				CTRLLThumbGrasp
+				deltaAddDelta -30
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbCurl
-			deltaAddDelta -30.7888
+				Figure
+				lHand:1
+				CTRLLThumbCurl
+				deltaAddDelta -30.7888
 			}
 		xOffsetB xTranB
 			{
@@ -67901,15 +68624,15 @@ actor lThumb3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lThumb2:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lThumb2:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -68049,15 +68772,15 @@ actor lThumb3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbGrasp
-			deltaAddDelta 7
+				Figure
+				lHand:1
+				CTRLLThumbGrasp
+				deltaAddDelta 7
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbCurl
-			deltaAddDelta -10
+				Figure
+				lHand:1
+				CTRLLThumbCurl
+				deltaAddDelta -10
 			}
 		rotateY yrot
 			{
@@ -68075,15 +68798,15 @@ actor lThumb3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbGrasp
-			deltaAddDelta 1
+				Figure
+				lHand:1
+				CTRLLThumbGrasp
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbCurl
-			deltaAddDelta 9
+				Figure
+				lHand:1
+				CTRLLThumbCurl
+				deltaAddDelta 9
 			}
 		rotateZ zrot
 			{
@@ -68101,15 +68824,15 @@ actor lThumb3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbGrasp
-			deltaAddDelta -8
+				Figure
+				lHand:1
+				CTRLLThumbGrasp
+				deltaAddDelta -8
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLThumbCurl
-			deltaAddDelta -74
+				Figure
+				lHand:1
+				CTRLLThumbCurl
+				deltaAddDelta -74
 			}
 		xOffsetB xTranB
 			{
@@ -68637,15 +69360,15 @@ actor lPinky1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lHand:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -68819,15 +69542,15 @@ actor lPinky1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -10
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -10
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandSpread
-			deltaAddDelta 30
+				Figure
+				lHand:1
+				CTRLLHandSpread
+				deltaAddDelta 30
 			}
 		rotateZ zrot
 			{
@@ -68845,10 +69568,10 @@ actor lPinky1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -75
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -75
 			}
 		xOffsetB xTranB
 			{
@@ -69395,15 +70118,15 @@ actor lPinky2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lPinky1:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lPinky1:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -69569,10 +70292,10 @@ actor lPinky2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -100
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -100
 			}
 		xOffsetB xTranB
 			{
@@ -70028,15 +70751,15 @@ actor lPinky3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lPinky2:1
-			scale
-			deltaAddDelta 1
+				Figure
+				lPinky2:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -70202,10 +70925,10 @@ actor lPinky3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			lHand:1
-			CTRLLHandGrasp
-			deltaAddDelta -70
+				Figure
+				lHand:1
+				CTRLLHandGrasp
+				deltaAddDelta -70
 			}
 		xOffsetB xTranB
 			{
@@ -70360,9 +71083,9 @@ actor rCollar:1
 			name JCM-HeadBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -70371,10 +71094,10 @@ actor rCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			head:1
-			xrot
-			deltaAddDelta -0.02
+				Figure
+				BODY:1
+				JCM-HeadBack
+				deltaAddDelta 1
 			indexes 33
 			numbDeltas 1050
 			deltas
@@ -70419,9 +71142,9 @@ actor rCollar:1
 			name JCM-rCollarUp
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -1
-			max 2
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -70430,10 +71153,10 @@ actor rCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rCollar:1
-			zrot
-			deltaAddDelta -0.04
+				Figure
+				BODY:1
+				JCM-rCollarUp
+				deltaAddDelta 1
 			indexes 623
 			numbDeltas 1050
 			deltas
@@ -71489,10 +72212,10 @@ actor rCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			chest:1
-			Breasts-classic
-			deltaAddDelta 1
+				Figure
+				chest:1
+				Breasts-classic
+				deltaAddDelta 1
 			indexes 501
 			numbDeltas 1050
 			deltas
@@ -72016,10 +72739,10 @@ actor rCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			chest:1
-			Nipples-classic
-			deltaAddDelta 1
+				Figure
+				chest:1
+				Nipples-classic
+				deltaAddDelta 1
 			indexes 105
 			numbDeltas 1050
 			deltas
@@ -72136,9 +72859,9 @@ actor rCollar:1
 			name JCM-rShldrBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -72147,10 +72870,10 @@ actor rCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			yrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-rShldrBack
+				deltaAddDelta 1
 			indexes 573
 			numbDeltas 1050
 			deltas
@@ -72735,9 +73458,9 @@ actor rCollar:1
 			name JCM-rShldrTwistForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -1
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -72746,10 +73469,10 @@ actor rCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			xrot
-			deltaAddDelta 0.011111
+				Figure
+				BODY:1
+				JCM-rShldrTwistForw
+				deltaAddDelta 1
 			indexes 270
 			numbDeltas 1050
 			deltas
@@ -73031,9 +73754,9 @@ actor rCollar:1
 			name JCM-rShldrDown
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -73042,10 +73765,10 @@ actor rCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			zrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-rShldrDown
+				deltaAddDelta 1
 			indexes 636
 			numbDeltas 1050
 			deltas
@@ -73693,9 +74416,9 @@ actor rCollar:1
 			name JCM-rShldrUp
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -73704,10 +74427,10 @@ actor rCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			zrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-rShldrUp
+				deltaAddDelta 1
 			indexes 722
 			numbDeltas 1050
 			deltas
@@ -74441,9 +75164,9 @@ actor rCollar:1
 			name JCM-rShldrForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -74452,10 +75175,10 @@ actor rCollar:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			yrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-rShldrForw
+				deltaAddDelta 1
 			indexes 598
 			numbDeltas 1050
 			deltas
@@ -75840,9 +76563,9 @@ actor rShldr:1
 			name JCM-rShldrBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -75851,10 +76574,10 @@ actor rShldr:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			yrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-rShldrBack
+				deltaAddDelta 1
 			indexes 51
 			numbDeltas 320
 			deltas
@@ -75917,9 +76640,9 @@ actor rShldr:1
 			name JCM-rShldrTwistForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min -1
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -75928,10 +76651,10 @@ actor rShldr:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			xrot
-			deltaAddDelta 0.011111
+				Figure
+				BODY:1
+				JCM-rShldrTwistForw
+				deltaAddDelta 1
 			indexes 274
 			numbDeltas 320
 			deltas
@@ -76217,9 +76940,9 @@ actor rShldr:1
 			name JCM-rElbowBend
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 2
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -76228,10 +76951,10 @@ actor rShldr:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rForeArm:1
-			yrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-rElbowBend
+				deltaAddDelta 1
 			indexes 254
 			numbDeltas 320
 			deltas
@@ -76497,9 +77220,9 @@ actor rShldr:1
 			name JCM-rShldrDown
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -76508,10 +77231,10 @@ actor rShldr:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			zrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-rShldrDown
+				deltaAddDelta 1
 			indexes 103
 			numbDeltas 320
 			deltas
@@ -76626,9 +77349,9 @@ actor rShldr:1
 			name JCM-rShldrUp
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -76637,10 +77360,10 @@ actor rShldr:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			zrot
-			deltaAddDelta -0.016667
+				Figure
+				BODY:1
+				JCM-rShldrUp
+				deltaAddDelta 1
 			indexes 66
 			numbDeltas 320
 			deltas
@@ -76718,9 +77441,9 @@ actor rShldr:1
 			name JCM-rShldrForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1.5
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -76729,10 +77452,10 @@ actor rShldr:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rShldr:1
-			yrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-rShldrForw
+				deltaAddDelta 1
 			indexes 100
 			numbDeltas 320
 			deltas
@@ -77371,9 +78094,9 @@ actor rForeArm:1
 			name JCM-rHandBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -77382,10 +78105,10 @@ actor rForeArm:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			yrot
-			deltaAddDelta -0.01
+				Figure
+				BODY:1
+				JCM-rHandBack
+				deltaAddDelta 1
 			indexes 128
 			numbDeltas 456
 			deltas
@@ -77525,9 +78248,9 @@ actor rForeArm:1
 			name JCM-rHandForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -77536,10 +78259,10 @@ actor rForeArm:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			yrot
-			deltaAddDelta 0.016
+				Figure
+				BODY:1
+				JCM-rHandForw
+				deltaAddDelta 1
 			indexes 124
 			numbDeltas 456
 			deltas
@@ -77895,9 +78618,9 @@ actor rForeArm:1
 			name JCM-rElbowBend
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 2
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -77906,10 +78629,10 @@ actor rForeArm:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rForeArm:1
-			yrot
-			deltaAddDelta 0.016667
+				Figure
+				BODY:1
+				JCM-rElbowBend
+				deltaAddDelta 1
 			indexes 150
 			numbDeltas 456
 			deltas
@@ -78591,10 +79314,10 @@ actor rHand:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-rThumbGraspNeg
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-rThumbGraspNeg
+				deltaAddDelta 1
 			indexes 446
 			numbDeltas 1148
 			deltas
@@ -79064,10 +79787,10 @@ actor rHand:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-rThumbGrasp
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-rThumbGrasp
+				deltaAddDelta 1
 			indexes 440
 			numbDeltas 1148
 			deltas
@@ -79531,10 +80254,10 @@ actor rHand:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-rThumbSpread
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-rThumbSpread
+				deltaAddDelta 1
 			indexes 173
 			numbDeltas 1148
 			deltas
@@ -79720,9 +80443,9 @@ actor rHand:1
 			name JCM-rHandBack
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -79731,10 +80454,10 @@ actor rHand:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			yrot
-			deltaAddDelta -0.01
+				Figure
+				BODY:1
+				JCM-rHandBack
+				deltaAddDelta 1
 			indexes 304
 			numbDeltas 1148
 			deltas
@@ -80050,9 +80773,9 @@ actor rHand:1
 			name JCM-rHandForw
 			initValue 0
 			hidden 1
-			forceLimits 1
-			min 0
-			max 1
+			forceLimits 0
+			min -10000
+			max 10000
 			trackingScale 0.01
 			keys
 				{
@@ -80061,10 +80784,10 @@ actor rHand:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			yrot
-			deltaAddDelta 0.016
+				Figure
+				BODY:1
+				JCM-rHandForw
+				deltaAddDelta 1
 			indexes 239
 			numbDeltas 1148
 			deltas
@@ -81525,10 +82248,10 @@ actor rThumb1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-rThumbGraspNeg
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-rThumbGraspNeg
+				deltaAddDelta 1
 			indexes 134
 			numbDeltas 170
 			deltas
@@ -81686,10 +82409,10 @@ actor rThumb1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-rThumbGrasp
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-rThumbGrasp
+				deltaAddDelta 1
 			indexes 134
 			numbDeltas 170
 			deltas
@@ -81847,10 +82570,10 @@ actor rThumb1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-rThumbSpread
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-rThumbSpread
+				deltaAddDelta 1
 			indexes 95
 			numbDeltas 170
 			deltas
@@ -82337,15 +83060,15 @@ actor rThumb1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rHand:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -82515,15 +83238,15 @@ actor rThumb1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbGrasp
-			deltaAddDelta 80
+				Figure
+				rHand:1
+				CTRLRThumbGrasp
+				deltaAddDelta 80
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbCurl
-			deltaAddDelta 52.9868
+				Figure
+				rHand:1
+				CTRLRThumbCurl
+				deltaAddDelta 52.9868
 			}
 		rotateY yrot
 			{
@@ -82541,15 +83264,15 @@ actor rThumb1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbGrasp
-			deltaAddDelta 6
+				Figure
+				rHand:1
+				CTRLRThumbGrasp
+				deltaAddDelta 6
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbCurl
-			deltaAddDelta -16.0205
+				Figure
+				rHand:1
+				CTRLRThumbCurl
+				deltaAddDelta -16.0205
 			}
 		rotateZ zrot
 			{
@@ -82731,10 +83454,10 @@ actor rThumb2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			JCM-rThumbSpread
-			deltaAddDelta 1
+				Figure
+				BODY:1
+				JCM-rThumbSpread
+				deltaAddDelta 1
 			indexes 29
 			numbDeltas 140
 			deltas
@@ -83174,15 +83897,15 @@ actor rThumb2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rThumb1:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rThumb1:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -83322,15 +84045,15 @@ actor rThumb2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbGrasp
-			deltaAddDelta 11
+				Figure
+				rHand:1
+				CTRLRThumbGrasp
+				deltaAddDelta 11
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbCurl
-			deltaAddDelta -20.0141
+				Figure
+				rHand:1
+				CTRLRThumbCurl
+				deltaAddDelta -20.0141
 			}
 		rotateY yrot
 			{
@@ -83348,15 +84071,15 @@ actor rThumb2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbGrasp
-			deltaAddDelta 5
+				Figure
+				rHand:1
+				CTRLRThumbGrasp
+				deltaAddDelta 5
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbCurl
-			deltaAddDelta 5.01305
+				Figure
+				rHand:1
+				CTRLRThumbCurl
+				deltaAddDelta 5.01305
 			}
 		rotateZ zrot
 			{
@@ -83374,15 +84097,15 @@ actor rThumb2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbGrasp
-			deltaAddDelta 30
+				Figure
+				rHand:1
+				CTRLRThumbGrasp
+				deltaAddDelta 30
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbCurl
-			deltaAddDelta 30.7888
+				Figure
+				rHand:1
+				CTRLRThumbCurl
+				deltaAddDelta 30.7888
 			}
 		xOffsetB xTranB
 			{
@@ -83838,15 +84561,15 @@ actor rThumb3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rThumb2:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rThumb2:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -83986,15 +84709,15 @@ actor rThumb3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbGrasp
-			deltaAddDelta 7
+				Figure
+				rHand:1
+				CTRLRThumbGrasp
+				deltaAddDelta 7
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbCurl
-			deltaAddDelta -10
+				Figure
+				rHand:1
+				CTRLRThumbCurl
+				deltaAddDelta -10
 			}
 		rotateY yrot
 			{
@@ -84012,15 +84735,15 @@ actor rThumb3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbGrasp
-			deltaAddDelta -1
+				Figure
+				rHand:1
+				CTRLRThumbGrasp
+				deltaAddDelta -1
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbCurl
-			deltaAddDelta -9
+				Figure
+				rHand:1
+				CTRLRThumbCurl
+				deltaAddDelta -9
 			}
 		rotateZ zrot
 			{
@@ -84038,15 +84761,15 @@ actor rThumb3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbGrasp
-			deltaAddDelta 8
+				Figure
+				rHand:1
+				CTRLRThumbGrasp
+				deltaAddDelta 8
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRThumbCurl
-			deltaAddDelta 74
+				Figure
+				rHand:1
+				CTRLRThumbCurl
+				deltaAddDelta 74
 			}
 		xOffsetB xTranB
 			{
@@ -84574,15 +85297,15 @@ actor rMid1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rHand:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -84772,10 +85495,10 @@ actor rMid1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 75
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 75
 			}
 		xOffsetB xTranB
 			{
@@ -85322,15 +86045,15 @@ actor rMid2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rMid1:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rMid1:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -85496,10 +86219,10 @@ actor rMid2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 100
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 100
 			}
 		xOffsetB xTranB
 			{
@@ -85955,15 +86678,15 @@ actor rMid3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rMid2:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rMid2:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -86129,10 +86852,10 @@ actor rMid3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 70
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 70
 			}
 		xOffsetB xTranB
 			{
@@ -86660,15 +87383,15 @@ actor rRing1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rHand:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -86842,15 +87565,15 @@ actor rRing1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandSpread
-			deltaAddDelta -15
+				Figure
+				rHand:1
+				CTRLRHandSpread
+				deltaAddDelta -15
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 6
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 6
 			}
 		rotateZ zrot
 			{
@@ -86868,10 +87591,10 @@ actor rRing1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 75
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 75
 			}
 		xOffsetB xTranB
 			{
@@ -87418,15 +88141,15 @@ actor rRing2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rRing1:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rRing1:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -87592,10 +88315,10 @@ actor rRing2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 100
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 100
 			}
 		xOffsetB xTranB
 			{
@@ -88051,15 +88774,15 @@ actor rRing3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rRing2:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rRing2:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -88225,10 +88948,10 @@ actor rRing3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 70
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 70
 			}
 		xOffsetB xTranB
 			{
@@ -88756,15 +89479,15 @@ actor rPinky1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rHand:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -88938,15 +89661,15 @@ actor rPinky1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandSpread
-			deltaAddDelta -30
+				Figure
+				rHand:1
+				CTRLRHandSpread
+				deltaAddDelta -30
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 10
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 10
 			}
 		rotateZ zrot
 			{
@@ -88964,10 +89687,10 @@ actor rPinky1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 75
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 75
 			}
 		xOffsetB xTranB
 			{
@@ -89514,15 +90237,15 @@ actor rPinky2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rPinky1:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rPinky1:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -89688,10 +90411,10 @@ actor rPinky2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 100
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 100
 			}
 		xOffsetB xTranB
 			{
@@ -90147,15 +90870,15 @@ actor rPinky3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rPinky2:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rPinky2:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -90321,10 +91044,10 @@ actor rPinky3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 70
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 70
 			}
 		xOffsetB xTranB
 			{
@@ -90852,15 +91575,15 @@ actor rIndex1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rHand:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -91034,15 +91757,15 @@ actor rIndex1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandSpread
-			deltaAddDelta 16
+				Figure
+				rHand:1
+				CTRLRHandSpread
+				deltaAddDelta 16
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta -6
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta -6
 			}
 		rotateZ zrot
 			{
@@ -91060,10 +91783,10 @@ actor rIndex1:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 75
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 75
 			}
 		xOffsetB xTranB
 			{
@@ -91610,15 +92333,15 @@ actor rIndex2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rIndex1:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rIndex1:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -91784,10 +92507,10 @@ actor rIndex2:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 100
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 100
 			}
 		xOffsetB xTranB
 			{
@@ -92243,15 +92966,15 @@ actor rIndex3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rIndex2:1
-			scale
-			deltaAddDelta 1
+				Figure
+				rIndex2:1
+				scale
+				deltaAddDelta 1
 			valueOpDeltaAdd
-			Figure
-			BODY:1
-			One
-			deltaAddDelta -1
+				Figure
+				BODY:1
+				One
+				deltaAddDelta -1
 			}
 		scaleX xScale
 			{
@@ -92417,10 +93140,10 @@ actor rIndex3:1
 				}
 			interpStyleLocked 0
 			valueOpDeltaAdd
-			Figure
-			rHand:1
-			CTRLRHandGrasp
-			deltaAddDelta 70
+				Figure
+				rHand:1
+				CTRLRHandGrasp
+				deltaAddDelta 70
 			}
 		xOffsetB xTranB
 			{
@@ -92536,133 +93259,133 @@ figure
 	name Antonia-126
 	root BODY:1
 	addChild hip:1
-	BODY:1
+		BODY:1
 	addChild hip2:1
-	hip:1
+		hip:1
 	addChild abdomen:1
-	hip:1
+		hip:1
 	addChild chest:1
-	abdomen:1
+		abdomen:1
 	addChild neck:1
-	chest:1
+		chest:1
 	addChild head:1
-	neck:1
+		neck:1
 	addChild lEye:1
-	head:1
+		head:1
 	addChild rEye:1
-	head:1
+		head:1
 	addChild jawLower:1
-	head:1
+		head:1
 	addChild tongue1:1
-	jawLower:1
+		jawLower:1
 	addChild tongue2:1
-	tongue1:1
+		tongue1:1
 	addChild jawUpper:1
-	head:1
+		head:1
 	addChild rCollar:1
-	chest:1
+		chest:1
 	addChild rShldr:1
-	rCollar:1
+		rCollar:1
 	addChild rForeArm:1
-	rShldr:1
+		rShldr:1
 	addChild rHand:1
-	rForeArm:1
+		rForeArm:1
 	addChild rThumb1:1
-	rHand:1
+		rHand:1
 	addChild rThumb2:1
-	rThumb1:1
+		rThumb1:1
 	addChild rThumb3:1
-	rThumb2:1
+		rThumb2:1
 	addChild rMid1:1
-	rHand:1
+		rHand:1
 	addChild rMid2:1
-	rMid1:1
+		rMid1:1
 	addChild rMid3:1
-	rMid2:1
+		rMid2:1
 	addChild rRing1:1
-	rHand:1
+		rHand:1
 	addChild rRing2:1
-	rRing1:1
+		rRing1:1
 	addChild rRing3:1
-	rRing2:1
+		rRing2:1
 	addChild rPinky1:1
-	rHand:1
+		rHand:1
 	addChild rPinky2:1
-	rPinky1:1
+		rPinky1:1
 	addChild rPinky3:1
-	rPinky2:1
+		rPinky2:1
 	addChild rIndex1:1
-	rHand:1
+		rHand:1
 	addChild rIndex2:1
-	rIndex1:1
+		rIndex1:1
 	addChild rIndex3:1
-	rIndex2:1
+		rIndex2:1
 	addChild lCollar:1
-	chest:1
+		chest:1
 	addChild lShldr:1
-	lCollar:1
+		lCollar:1
 	addChild lForeArm:1
-	lShldr:1
+		lShldr:1
 	addChild lHand:1
-	lForeArm:1
+		lForeArm:1
 	addChild lIndex1:1
-	lHand:1
+		lHand:1
 	addChild lIndex2:1
-	lIndex1:1
+		lIndex1:1
 	addChild lIndex3:1
-	lIndex2:1
+		lIndex2:1
 	addChild lMid1:1
-	lHand:1
+		lHand:1
 	addChild lMid2:1
-	lMid1:1
+		lMid1:1
 	addChild lMid3:1
-	lMid2:1
+		lMid2:1
 	addChild lRing1:1
-	lHand:1
+		lHand:1
 	addChild lRing2:1
-	lRing1:1
+		lRing1:1
 	addChild lRing3:1
-	lRing2:1
+		lRing2:1
 	addChild lThumb1:1
-	lHand:1
+		lHand:1
 	addChild lThumb2:1
-	lThumb1:1
+		lThumb1:1
 	addChild lThumb3:1
-	lThumb2:1
+		lThumb2:1
 	addChild lPinky1:1
-	lHand:1
+		lHand:1
 	addChild lPinky2:1
-	lPinky1:1
+		lPinky1:1
 	addChild lPinky3:1
-	lPinky2:1
+		lPinky2:1
 	addChild rThigh:1
-	hip2:1
+		hip2:1
 	addChild rShin:1
-	rThigh:1
+		rThigh:1
 	addChild rFoot:1
-	rShin:1
+		rShin:1
 	addChild rInstep:1
-	rFoot:1
+		rFoot:1
 	addChild rToe:1
-	rInstep:1
+		rInstep:1
 	addChild rBigToe1:1
-	rToe:1
+		rToe:1
 	addChild rBigToe2:1
-	rBigToe1:1
+		rBigToe1:1
 	addChild lThigh:1
-	hip2:1
+		hip2:1
 	addChild lShin:1
-	lThigh:1
+		lThigh:1
 	addChild lFoot:1
-	lShin:1
+		lShin:1
 	addChild lInstep:1
-	lFoot:1
+		lFoot:1
 	addChild lToe:1
-	lInstep:1
+		lInstep:1
 	addChild lBigToe1:1
-	lToe:1
+		lToe:1
 	addChild lBigToe2:1
-	lBigToe1:1
+		lBigToe1:1
 	inkyChain Left_Leg
 		{
 		off
@@ -92706,127 +93429,127 @@ figure
 	defaultPick hip:1
 	displayOn 1
 	weld hip2:1
-	hip:1
+		hip:1
 	weld rThigh:1
-	hip2:1
+		hip2:1
 	weld rShin:1
-	rThigh:1
+		rThigh:1
 	weld rFoot:1
-	rShin:1
+		rShin:1
 	weld rInstep:1
-	rFoot:1
+		rFoot:1
 	weld rToe:1
-	rInstep:1
+		rInstep:1
 	weld rBigToe1:1
-	rToe:1
+		rToe:1
 	weld rBigToe2:1
-	rBigToe1:1
+		rBigToe1:1
 	weld lThigh:1
-	hip2:1
+		hip2:1
 	weld lShin:1
-	lThigh:1
+		lThigh:1
 	weld lFoot:1
-	lShin:1
+		lShin:1
 	weld lInstep:1
-	lFoot:1
+		lFoot:1
 	weld lToe:1
-	lInstep:1
+		lInstep:1
 	weld lBigToe1:1
-	lToe:1
+		lToe:1
 	weld lBigToe2:1
-	lBigToe1:1
+		lBigToe1:1
 	weld abdomen:1
-	hip:1
+		hip:1
 	weld chest:1
-	abdomen:1
+		abdomen:1
 	weld neck:1
-	chest:1
+		chest:1
 	weld head:1
-	neck:1
+		neck:1
 	weld jawLower:1
-	head:1
+		head:1
 	weld tongue1:1
-	jawLower:1
+		jawLower:1
 	weld tongue2:1
-	tongue1:1
+		tongue1:1
 	weld jawUpper:1
-	head:1
+		head:1
 	weld lCollar:1
-	chest:1
+		chest:1
 	weld lShldr:1
-	lCollar:1
+		lCollar:1
 	weld lForeArm:1
-	lShldr:1
+		lShldr:1
 	weld lHand:1
-	lForeArm:1
+		lForeArm:1
 	weld lIndex1:1
-	lHand:1
+		lHand:1
 	weld lIndex2:1
-	lIndex1:1
+		lIndex1:1
 	weld lIndex3:1
-	lIndex2:1
+		lIndex2:1
 	weld lMid1:1
-	lHand:1
+		lHand:1
 	weld lMid2:1
-	lMid1:1
+		lMid1:1
 	weld lMid3:1
-	lMid2:1
+		lMid2:1
 	weld lRing1:1
-	lHand:1
+		lHand:1
 	weld lRing2:1
-	lRing1:1
+		lRing1:1
 	weld lRing3:1
-	lRing2:1
+		lRing2:1
 	weld lThumb1:1
-	lHand:1
+		lHand:1
 	weld lThumb2:1
-	lThumb1:1
+		lThumb1:1
 	weld lThumb3:1
-	lThumb2:1
+		lThumb2:1
 	weld lPinky1:1
-	lHand:1
+		lHand:1
 	weld lPinky2:1
-	lPinky1:1
+		lPinky1:1
 	weld lPinky3:1
-	lPinky2:1
+		lPinky2:1
 	weld rCollar:1
-	chest:1
+		chest:1
 	weld rShldr:1
-	rCollar:1
+		rCollar:1
 	weld rForeArm:1
-	rShldr:1
+		rShldr:1
 	weld rHand:1
-	rForeArm:1
+		rForeArm:1
 	weld rThumb1:1
-	rHand:1
+		rHand:1
 	weld rThumb2:1
-	rThumb1:1
+		rThumb1:1
 	weld rThumb3:1
-	rThumb2:1
+		rThumb2:1
 	weld rMid1:1
-	rHand:1
+		rHand:1
 	weld rMid2:1
-	rMid1:1
+		rMid1:1
 	weld rMid3:1
-	rMid2:1
+		rMid2:1
 	weld rRing1:1
-	rHand:1
+		rHand:1
 	weld rRing2:1
-	rRing1:1
+		rRing1:1
 	weld rRing3:1
-	rRing2:1
+		rRing2:1
 	weld rPinky1:1
-	rHand:1
+		rHand:1
 	weld rPinky2:1
-	rPinky1:1
+		rPinky1:1
 	weld rPinky3:1
-	rPinky2:1
+		rPinky2:1
 	weld rIndex1:1
-	rHand:1
+		rHand:1
 	weld rIndex2:1
-	rIndex1:1
+		rIndex1:1
 	weld rIndex3:1
-	rIndex2:1
+		rIndex2:1
 	allowsBending 1
 	figureType 1318
 	origFigureType 1318
