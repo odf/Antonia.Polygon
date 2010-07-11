@@ -1,4 +1,6 @@
-- make JCMs for the neck
+- change min limit for right foot bend JCM to -1
+- foot bend: reduce 'right neg' bulge to ~0.05
+- foot twist: make all angles 90 deg and use falloff zones
 - provide a pose that re-inserts JCM-ERC when lost
 - set limits for bends
 - final version: fix ordering of materials in obj file
