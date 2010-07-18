@@ -1,3 +1,14 @@
+Version 0.9.126:
+===============
+- fix the thigh problems reported by Cage
+- visual check of all JPs, particularly falloff zones
+- automatic check of CR2 for asymmetries and other inconsistencies
+- some new poses
+- add temporary morph channels in head actor for expression testing
+
+
+Version 1.0:
+===========
 - provide a pose that re-inserts JCM-ERC when lost
 - set limits for bends
-- final version: fix ordering of materials in obj file
+- fix ordering of materials in obj file
