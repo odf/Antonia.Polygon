@@ -1,14 +1,21 @@
 Version 0.9.126:
 ===============
-- fix the thigh problems reported by Cage
-- visual check of all JPs, particularly falloff zones
+- install JCMs for thigh zrot inward
+- fix/improve JPs for:
+  * thigh twist
+  * neck and hip2
+  * collar front-back
+  * shin twist
+- fix axes rotation for forearm? (may require new JCM)
+- visual check of hand JPs, particularly falloff zones
 - automatic check of CR2 for asymmetries and other inconsistencies
 - some new poses
 - add temporary morph channels in head actor for expression testing
 
 
-Version 1.0:
-===========
+by Version 1.0:
+==============
+- expression morphs
 - provide a pose that re-inserts JCM-ERC when lost
 - set limits for bends
 - fix ordering of materials in obj file
