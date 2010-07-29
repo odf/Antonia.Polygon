@@ -1,12 +1,8 @@
 Version 0.9.126:
 ===============
-- install JCMs for thigh zrot inward
 - fix/improve JPs for:
-  * thigh twist
-  * neck and hip2
+  * neck
   * collar front-back
-  * shin twist
-- fix axes rotation for forearm? (may require new JCM)
 - visual check of hand JPs, particularly falloff zones
 - automatic check of CR2 for asymmetries and other inconsistencies
 - some new poses
