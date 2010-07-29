@@ -384,6 +384,7 @@ actor BODY:1
 					collapsed 1
 					parmNode JCM-lThighKick
 					parmNode JCM-lThighSpread
+					parmNode JCM-lThighIn
 					parmNode JCM-lKneeBend
 					parmNode JCM-lKneeBend-B
 					parmNode JCM-lFootBend
@@ -394,6 +395,7 @@ actor BODY:1
 					collapsed 1
 					parmNode JCM-rThighKick
 					parmNode JCM-rThighSpread
+					parmNode JCM-rThighIn
 					parmNode JCM-rKneeBend
 					parmNode JCM-rKneeBend-B
 					parmNode JCM-rFootBend
