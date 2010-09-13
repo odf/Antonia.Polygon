@@ -1,8 +1,5 @@
 Version 0.9.126:
 ===============
-- fix/improve JPs for:
-  * neck
-  * collar front-back
 - visual check of hand JPs, particularly falloff zones
 - automatic check of CR2 for asymmetries and other inconsistencies
 - some new poses
