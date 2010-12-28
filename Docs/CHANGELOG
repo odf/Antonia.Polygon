@@ -1,3 +1,7 @@
+Changes in 0.9.127:
+==================
+- added a JCM for opening the mouth (slaved to jawLower/xrot)
+
 Changes in 0.9.126:
 ==================
 - introduced control channels in the BODY actor for all the JCMs
