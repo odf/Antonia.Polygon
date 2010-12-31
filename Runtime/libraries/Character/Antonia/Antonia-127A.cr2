@@ -45202,12 +45202,1032 @@ actor head:1
 					parmNode EyesClosed
 					parmNode CTRLEyesLeftRight
 					parmNode CTRLEyesUpDown
+					parmNode UprLidUp
+					parmNode UprLidUpLeft
+					parmNode UprLidUpRight
+					parmNode UprLidDn
+					parmNode UprLidDnLeft
+					parmNode UprLidDnRight
+					parmNode Squint
+					parmNode SquintLeft
+					parmNode SquintRight
+					}
+				groupNode Brows
+					{
+					collapsed 1
+					parmNode BrowMidUp
+					parmNode BrowMidDn
+					parmNode BrowOutUp
+					parmNode BrowOutUpLeft
+					parmNode BrowOutUpRight
+					parmNode BrowDown
+					parmNode BrowDownLeft
+					parmNode BrowDownRight
+					parmNode BrowSqueeze
 					}
 				groupNode Mouth
 					{
 					collapsed 1
+					parmNode Smile
+					parmNode SmileLeft
+					parmNode SmileRight
+					parmNode Narrow
+					parmNode NarrowLeft
+					parmNode NarrowRight
+					parmNode Sneer
+					parmNode SneerLeft
+					parmNode SneerRight
+					parmNode Frown
+					parmNode FrownLeft
+					parmNode FrownRight
+					parmNode MouthLeft
+					parmNode MouthRight
+					}
+				groupNode Lips
+					{
+					collapsed 1
+					parmNode UprLipUp
+					parmNode UprLipUpLeft
+					parmNode UprLipUpRight
+					parmNode UprLipDn
+					parmNode UprLipDnLeft
+					parmNode UprLipDnRight
+					parmNode LwrLipDn
+					parmNode LwrLipDnLeft
+					parmNode LwrLipDnRight
+					parmNode LwrLipUp
+					parmNode LwrLipUpLeft
+					parmNode LwrLipUpRight
 					}
 				}
+			}
+		targetGeom MouthRight
+			{
+			name MouthRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom MouthLeft
+			{
+			name MouthLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom LwrLipUpRight
+			{
+			name LwrLipUpRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom LwrLipUpLeft
+			{
+			name LwrLipUpLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom LwrLipUp
+			{
+			name LwrLipUp
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom LwrLipDnRight
+			{
+			name LwrLipDnRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom LwrLipDnLeft
+			{
+			name LwrLipDnLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom LwrLipDn
+			{
+			name LwrLipDn
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom UprLipDnRight
+			{
+			name UprLipDnRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom UprLipDnLeft
+			{
+			name UprLipDnLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom UprLipDn
+			{
+			name UprLipDn
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom UprLipUpRight
+			{
+			name UprLipUpRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom UprLipUpLeft
+			{
+			name UprLipUpLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom UprLipUp
+			{
+			name UprLipUp
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom FrownRight
+			{
+			name FrownRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom FrownLeft
+			{
+			name FrownLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom Frown
+			{
+			name Frown
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom SneerRight
+			{
+			name SneerRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom SneerLeft
+			{
+			name SneerLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom Sneer
+			{
+			name Sneer
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom NarrowRight
+			{
+			name NarrowRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom NarrowLeft
+			{
+			name NarrowLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom Narrow
+			{
+			name Narrow
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom SmileRight
+			{
+			name SmileRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom SmileLeft
+			{
+			name SmileLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom Smile
+			{
+			name Smile
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom BrowSqueeze
+			{
+			name BrowSqueeze
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom BrowDownRight
+			{
+			name BrowDownRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom BrowDownLeft
+			{
+			name BrowDownLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom BrowDown
+			{
+			name BrowDown
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom BrowOutUpRight
+			{
+			name BrowOutUpRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom BrowOutUpLeft
+			{
+			name BrowOutUpLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom BrowOutUp
+			{
+			name BrowOutUp
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom BrowMidDn
+			{
+			name BrowMidDn
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom BrowMidUp
+			{
+			name BrowMidUp
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom SquintRight
+			{
+			name SquintRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom SquintLeft
+			{
+			name SquintLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom Squint
+			{
+			name Squint
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom UprLidDnRight
+			{
+			name UprLidDnRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom UprLidDnLeft
+			{
+			name UprLidDnLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom UprLidDn
+			{
+			name UprLidDn
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom UprLidUpRight
+			{
+			name UprLidUpRight
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom UprLidUpLeft
+			{
+			name UprLidUpLeft
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
+			}
+		targetGeom UprLidUp
+			{
+			name UprLidUp
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
 			}
 		targetGeom EyesClosed
 			{
