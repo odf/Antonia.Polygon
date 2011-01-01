@@ -45265,7 +45265,7 @@ actor head:1
 			{
 			name MouthRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45287,7 +45287,7 @@ actor head:1
 			{
 			name MouthLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45309,7 +45309,7 @@ actor head:1
 			{
 			name LwrLipUpRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45331,7 +45331,7 @@ actor head:1
 			{
 			name LwrLipUpLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45353,7 +45353,7 @@ actor head:1
 			{
 			name LwrLipUp
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45375,7 +45375,7 @@ actor head:1
 			{
 			name LwrLipDnRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45397,7 +45397,7 @@ actor head:1
 			{
 			name LwrLipDnLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45419,7 +45419,7 @@ actor head:1
 			{
 			name LwrLipDn
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45441,7 +45441,7 @@ actor head:1
 			{
 			name UprLipDnRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45463,7 +45463,7 @@ actor head:1
 			{
 			name UprLipDnLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45485,7 +45485,7 @@ actor head:1
 			{
 			name UprLipDn
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45507,7 +45507,7 @@ actor head:1
 			{
 			name UprLipUpRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45529,7 +45529,7 @@ actor head:1
 			{
 			name UprLipUpLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45551,7 +45551,7 @@ actor head:1
 			{
 			name UprLipUp
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45573,7 +45573,7 @@ actor head:1
 			{
 			name FrownRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45595,7 +45595,7 @@ actor head:1
 			{
 			name FrownLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45617,7 +45617,7 @@ actor head:1
 			{
 			name Frown
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45639,7 +45639,7 @@ actor head:1
 			{
 			name SneerRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45661,7 +45661,7 @@ actor head:1
 			{
 			name SneerLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45683,7 +45683,7 @@ actor head:1
 			{
 			name Sneer
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45705,7 +45705,7 @@ actor head:1
 			{
 			name NarrowRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45727,7 +45727,7 @@ actor head:1
 			{
 			name NarrowLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45749,7 +45749,7 @@ actor head:1
 			{
 			name Narrow
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45771,7 +45771,7 @@ actor head:1
 			{
 			name SmileRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45793,7 +45793,7 @@ actor head:1
 			{
 			name SmileLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45815,7 +45815,7 @@ actor head:1
 			{
 			name Smile
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45837,7 +45837,7 @@ actor head:1
 			{
 			name BrowSqueeze
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45859,7 +45859,7 @@ actor head:1
 			{
 			name BrowDownRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45881,7 +45881,7 @@ actor head:1
 			{
 			name BrowDownLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45903,7 +45903,7 @@ actor head:1
 			{
 			name BrowDown
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45925,7 +45925,7 @@ actor head:1
 			{
 			name BrowOutUpRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45947,7 +45947,7 @@ actor head:1
 			{
 			name BrowOutUpLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45969,7 +45969,7 @@ actor head:1
 			{
 			name BrowOutUp
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -45991,7 +45991,7 @@ actor head:1
 			{
 			name BrowMidDn
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -46013,7 +46013,7 @@ actor head:1
 			{
 			name BrowMidUp
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -46035,7 +46035,7 @@ actor head:1
 			{
 			name SquintRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -46057,7 +46057,7 @@ actor head:1
 			{
 			name SquintLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -46079,7 +46079,7 @@ actor head:1
 			{
 			name Squint
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -46101,7 +46101,7 @@ actor head:1
 			{
 			name UprLidDnRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -46123,7 +46123,7 @@ actor head:1
 			{
 			name UprLidDnLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -46145,7 +46145,7 @@ actor head:1
 			{
 			name UprLidDn
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -46167,7 +46167,7 @@ actor head:1
 			{
 			name UprLidUpRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -46189,7 +46189,7 @@ actor head:1
 			{
 			name UprLidUpLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -46211,7 +46211,7 @@ actor head:1
 			{
 			name UprLidUp
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
