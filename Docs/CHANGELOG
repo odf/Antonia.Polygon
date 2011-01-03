@@ -1,6 +1,7 @@
 Changes in 0.9.127:
 ==================
-- create empty pre-named channels for expression morph in the head
+- created empty pre-named channels for expression morphs in the head
+- fixed the joint center and angle for the lower jaw actor
 - fixed the position and angle of the teeth in the default shape
 - added a JCM for opening the mouth (slaved to jawLower/xrot)
 

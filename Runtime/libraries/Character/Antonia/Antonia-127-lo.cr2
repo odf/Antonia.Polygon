@@ -30620,7 +30620,7 @@ actor jawLower:1
 		zOffsetA zOffset
 			{
 			name zOffset
-			initValue -0.00267419
+			initValue -0.0068947
 			hidden 1
 			forceLimits 0
 			min -100000
@@ -30632,12 +30632,12 @@ actor jawLower:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			staticValue -0.00267419
+			staticValue -0.0068947
 			}
 		yOffsetA yOffset
 			{
 			name yOffset
-			initValue 0.626743
+			initValue 0.632583
 			hidden 1
 			forceLimits 0
 			min -100000
@@ -30649,7 +30649,7 @@ actor jawLower:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			staticValue 0.626743
+			staticValue 0.632583
 			}
 		xOffsetA xOffset
 			{
@@ -30805,7 +30805,7 @@ actor jawLower:1
 		yOffsetB yTranB
 			{
 			name yTranB
-			initValue -0.626743
+			initValue -0.632583
 			hidden 1
 			forceLimits 0
 			min -100000
@@ -30817,12 +30817,12 @@ actor jawLower:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			staticValue -0.626743
+			staticValue -0.632583
 			}
 		zOffsetB zTranB
 			{
 			name yTranB
-			initValue 0.00267419
+			initValue 0.0068947
 			hidden 1
 			forceLimits 0
 			min -100000
@@ -30834,7 +30834,7 @@ actor jawLower:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			staticValue 0.00267419
+			staticValue 0.0068947
 			}
 		translateX xtran
 			{
@@ -30886,8 +30886,8 @@ actor jawLower:1
 			}
 		}
 	endPoint 0 0.626072 0.00363529
-	origin 0 0.626743 -0.00267419
-	orientation -41.1816 0 0
+	origin 0 0.632583 -0.0068947
+	orientation 10.0 0 0
 	displayOrigin 0
 	locked 0
 	displayMode USEPARENT
