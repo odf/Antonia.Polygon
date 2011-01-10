@@ -1,7 +1,8 @@
+- add a "tongue out" morph
+- "mouth left" and "mouth right" morphs
+- add JCMs for more jaw movements
 - automatic check of CR2 for asymmetries and other inconsistencies
 - some new poses
-- add temporary morph channels in head actor for expression testing
-- expression morphs
 - provide a pose that re-inserts JCM-ERC when lost
 - set limits for bends
 - fix ordering of materials in obj file
