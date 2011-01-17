@@ -25893,6 +25893,7 @@ actor head:1
 				groupNode Mouth
 					{
 					collapsed 1
+					parmNode MouthOpen
 					parmNode Smile
 					parmNode SmileLeft
 					parmNode SmileRight
@@ -25925,6 +25926,28 @@ actor head:1
 					parmNode LwrLipUpRight
 					}
 				}
+			}
+		targetGeom MouthOpen
+			{
+			name MouthOpen
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min 0
+			max 1
+			trackingScale 0.01
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
 			}
 		targetGeom MouthRight
 			{
@@ -36584,6 +36607,11 @@ actor jawLower:1
 				k 0 0
 				}
 			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				MouthOpen
+				deltaAddDelta 20
 			}
 		xOffsetB xTranB
 			{

@@ -4,6 +4,7 @@ Changes in 0.9.127:
 - fixed the joint center and angle for the lower jaw actor
 - fixed the position and angle of the teeth in the default shape
 - added a JCM for opening the mouth (slaved to jawLower/xrot)
+- added a control for jawLower/xrot in the head actor
 
 Changes in 0.9.126:
 ==================
