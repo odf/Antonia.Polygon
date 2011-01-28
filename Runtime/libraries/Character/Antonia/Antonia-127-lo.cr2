@@ -25876,15 +25876,12 @@ actor head:1
 					collapsed 1
 					parmNode CTRLEyesLeftRight
 					parmNode CTRLEyesUpDown
-					parmNode UprLidUp
-					parmNode UprLidUpLeft
-					parmNode UprLidUpRight
-					parmNode UprLidDn
-					parmNode UprLidDnLeft
-					parmNode UprLidDnRight
-					parmNode LwrLidUp
-					parmNode LwrLidUpLeft
-					parmNode LwrLidUpRight
+					parmNode EyesOpenClose
+					parmNode LeftEyeOpenClose
+					parmNode RightEyeOpenClose
+					parmNode LowerLidsUpDown
+					parmNode LeftLowerLidUpDown
+					parmNode RightLowerLidUpDown
 					parmNode Squint
 					parmNode SquintLeft
 					parmNode SquintRight
@@ -31869,7 +31866,7 @@ actor head:1
 			{
 			name LwrLidUpRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min -0.5
 			max 1
@@ -31880,6 +31877,16 @@ actor head:1
 				k 0 0
 				}
 			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				RightLowerLidUpDown
+				deltaAddDelta 1
+			valueOpDeltaAdd
+				Figure
+				rEye:1
+				xrot
+				deltaAddDelta -0.04
 			indexes 59
 			numbDeltas 1672
 			deltas
@@ -31950,7 +31957,7 @@ actor head:1
 			{
 			name LwrLidUpLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min -0.5
 			max 1
@@ -31961,6 +31968,16 @@ actor head:1
 				k 0 0
 				}
 			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				LeftLowerLidUpDown
+				deltaAddDelta 1
+			valueOpDeltaAdd
+				Figure
+				lEye:1
+				xrot
+				deltaAddDelta -0.04
 			indexes 59
 			numbDeltas 1672
 			deltas
@@ -32031,7 +32048,7 @@ actor head:1
 			{
 			name LwrLidUp
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min -0.5
 			max 1
@@ -32457,7 +32474,7 @@ actor head:1
 			{
 			name UprLidDnRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -32468,6 +32485,11 @@ actor head:1
 				k 0 0
 				}
 			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				UprLidHtRight
+				deltaAddDelta 1
 			indexes 82
 			numbDeltas 1672
 			deltas
@@ -32561,7 +32583,7 @@ actor head:1
 			{
 			name UprLidDnLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -32572,6 +32594,11 @@ actor head:1
 				k 0 0
 				}
 			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				UprLidHtLeft
+				deltaAddDelta 1
 			indexes 82
 			numbDeltas 1672
 			deltas
@@ -32665,7 +32692,7 @@ actor head:1
 			{
 			name UprLidDn
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -32851,7 +32878,7 @@ actor head:1
 			{
 			name UprLidUpRight
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -32862,6 +32889,11 @@ actor head:1
 				k 0 0
 				}
 			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				UprLidHtRight
+				deltaAddDelta -2
 			indexes 74
 			numbDeltas 1672
 			deltas
@@ -32947,7 +32979,7 @@ actor head:1
 			{
 			name UprLidUpLeft
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -32958,6 +32990,11 @@ actor head:1
 				k 0 0
 				}
 			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				UprLidHtLeft
+				deltaAddDelta -2
 			indexes 74
 			numbDeltas 1672
 			deltas
@@ -33043,7 +33080,7 @@ actor head:1
 			{
 			name UprLidUp
 			initValue 0
-			hidden 0
+			hidden 1
 			forceLimits 1
 			min 0
 			max 1
@@ -34857,6 +34894,204 @@ actor head:1
 				d 1575 0.01425122 0.004792464 -0.03516733
 				}
 			}
+		targetGeom EyesOpenClose
+			{
+			name EyesOpenClose
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -1.1
+			max 1.6
+			trackingScale 0.04
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			}
+		targetGeom LeftEyeOpenClose
+			{
+			name LeftEyeOpenClose
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -1.1
+			max 1.6
+			trackingScale 0.04
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				EyesOpenClose
+				deltaAddDelta 1
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			}
+		targetGeom RightEyeOpenClose
+			{
+			name RightEyeOpenClose
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -1.1
+			max 1.6
+			trackingScale 0.04
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				EyesOpenClose
+				deltaAddDelta 1
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			}
+		valueParm UprLidHtLeft
+			{
+			name UprLidHtLeft
+			initValue 0
+			hidden 1
+			forceLimits 0
+			min -10000
+			max 10000
+			trackingScale 0.04
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				LeftEyeOpenClose
+				deltaAddDelta 1
+			valueOpDeltaAdd
+				Figure
+				lEye:1
+				xrot
+				deltaAddDelta 0.022
+			}
+		valueParm UprLidHtRight
+			{
+			name UprLidHtRight
+			initValue 0
+			hidden 1
+			forceLimits 0
+			min -10000
+			max 10000
+			trackingScale 0.04
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				RightEyeOpenClose
+				deltaAddDelta 1
+			valueOpDeltaAdd
+				Figure
+				rEye:1
+				xrot
+				deltaAddDelta 0.022
+			}
+		targetGeom LowerLidsUpDown
+			{
+			name LowerLidsUpDown
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -1.5
+			max 2
+			trackingScale 0.04
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			}
+		targetGeom LeftLowerLidUpDown
+			{
+			name LeftLowerLidUpDown
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -1.5
+			max 2
+			trackingScale 0.04
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				LowerLidsUpDown
+				deltaAddDelta 1
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			}
+		targetGeom RightLowerLidUpDown
+			{
+			name RightLowerLidUpDown
+			initValue 0
+			hidden 0
+			forceLimits 1
+			min -1.5
+			max 2
+			trackingScale 0.04
+			keys
+				{
+				static 0
+				k 0 0
+				}
+			interpStyleLocked 0
+			valueOpDeltaAdd
+				Figure
+				head:1
+				LowerLidsUpDown
+				deltaAddDelta 1
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			}
 		targetGeom CTRLEyesLeftRight
 			{
 			name EyesLeftRight
@@ -35739,7 +35974,7 @@ actor lEye:1
 				Figure
 				head:1
 				CTRLEyesUpDown
-				deltaAddDelta -25
+				deltaAddDelta 25
 			}
 		xOffsetB xTranB
 			{
@@ -36292,7 +36527,7 @@ actor rEye:1
 				Figure
 				head:1
 				CTRLEyesUpDown
-				deltaAddDelta -25
+				deltaAddDelta 25
 			}
 		xOffsetB xTranB
 			{
