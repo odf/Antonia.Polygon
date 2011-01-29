@@ -35572,8 +35572,8 @@ actor tongue1:1
 			interpStyleLocked 0
 			otherActor tongue2:1
 			matrixActor NULL
-			center 0 0.625907 0.0124147
-			startPt 0.0137183
+			center 0 0.627 0.017
+			startPt 0.00824551
 			endPt 0.0241109
 			flipped
 			calcWeights
@@ -35593,14 +35593,18 @@ actor tongue1:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -125 135 45 -45
+			angles 240 100 80 300
 			otherActor tongue2:1
 			matrixActor NULL
-			center 0 0.625907 0.0124147
+			center 0 0.627 0.017
 			flipped
-			doBulge 0
+			doBulge 1
 			jointMult 1
 			calcWeights
+			posBulgeLeft -0.007
+			posBulgeRight 0
+			negBulgeLeft 0
+			negBulgeRight -0.007
 			}
 		jointX tongue2_jointx
 			{
@@ -35617,10 +35621,10 @@ actor tongue1:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -45 -135 135 45
+			angles -78 -155 -200 13
 			otherActor tongue2:1
 			matrixActor NULL
-			center 0 0.625907 0.0124147
+			center 0 0.627 0.017
 			flipped
 			doBulge 0
 			jointMult 1
@@ -35926,7 +35930,7 @@ actor tongue1:1
 		}
 	endPoint 0 0.625907 0.0124147
 	origin 0 0.626072 0.00363529
-	orientation 15.9473 0 0
+	orientation 0 0 0
 	displayOrigin 0
 	locked 0
 	displayMode USEPARENT
@@ -36378,10 +36382,10 @@ actor tongue2:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -45 -135 135 45
+			angles -78 -155 -200 13
 			otherActor tongue1:1
 			matrixActor NULL
-			center 0 0.625907 0.0124147
+			center 0 0.627 0.017
 			doBulge 0
 			jointMult 1
 			calcWeights
@@ -36401,13 +36405,17 @@ actor tongue2:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			angles -125 135 45 -45
+			angles 240 100 80 300
 			otherActor tongue1:1
 			matrixActor NULL
-			center 0 0.625907 0.0124147
-			doBulge 0
+			center 0 0.627 0.017
+			doBulge 1
 			jointMult 1
 			calcWeights
+			posBulgeLeft -0.007
+			posBulgeRight 0
+			negBulgeLeft 0
+			negBulgeRight -0.007
 			}
 		twistZ twistz
 			{
@@ -36426,8 +36434,8 @@ actor tongue2:1
 			interpStyleLocked 0
 			otherActor tongue1:1
 			matrixActor NULL
-			center 0 0.625907 0.0124147
-			startPt 0.0137183
+			center 0 0.627 0.017
+			startPt 0.00824551
 			endPt 0.0241109
 			calcWeights
 			}
@@ -36580,8 +36588,8 @@ actor tongue2:1
 			}
 		}
 	endPoint 0 0.62521 0.0201894
-	origin 0 0.625907 0.0124147
-	orientation 18.4277 0 0
+	origin 0 0.627 0.017
+	orientation 0 0 0
 	displayOrigin 0
 	locked 0
 	displayMode USEPARENT
