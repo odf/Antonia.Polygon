@@ -73845,9 +73845,23 @@ actor tongue1:1
 			matrixActor NULL
 			center 0 0.627 0.017
 			flipped
-			doBulge 0
+			doBulge 1
 			jointMult 1
 			calcWeights
+			sphereMatsRaw
+				0.049 0 0 0
+				0 0.00910002 0 0
+				0 0 0.005 0
+				-0.000481188 0.627407 0.0304 1
+				
+				0.02376 0 0 0
+				0 0.0101 0 0
+				0 0 0.0237 0
+				-0.0005 0.6304 0.03 1
+			posBulgeLeft -0.01
+			posBulgeRight 0
+			negBulgeLeft -0.004
+			negBulgeRight 0
 			}
 		smoothScaleZ tongue2_smooZ
 			{
@@ -74147,7 +74161,7 @@ actor tongue1:1
 				deltaAddDelta 0.016
 			}
 		}
-	endPoint 0 0.625907 0.0124147
+	endPoint 0 0.627 0.017
 	origin 0 0.626072 0.00363529
 	orientation 0 0 0
 	displayOrigin 0
@@ -74660,9 +74674,23 @@ actor tongue2:1
 			otherActor tongue1:1
 			matrixActor NULL
 			center 0 0.627 0.017
-			doBulge 0
+			doBulge 1
 			jointMult 1
 			calcWeights
+			sphereMatsRaw
+				0.049 0 0 0
+				0 0.00910002 0 0
+				0 0 0.005 0
+				-0.000481188 0.627407 0.0304 1
+				
+				0.02376 0 0 0
+				0 0.0101 0 0
+				0 0 0.0237 0
+				-0.0005 0.6304 0.03 1
+			posBulgeLeft -0.01
+			posBulgeRight 0
+			negBulgeLeft -0.004
+			negBulgeRight 0
 			}
 		jointY jointy
 			{
@@ -74863,7 +74891,7 @@ actor tongue2:1
 		}
 	endPoint 0 0.62521 0.0201894
 	origin 0 0.627 0.017
-	orientation 0 0 0
+	orientation 10 0 0
 	displayOrigin 0
 	locked 0
 	displayMode USEPARENT
