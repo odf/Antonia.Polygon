@@ -2,45 +2,49 @@
 
 Antonia is an original Poser figure by Olaf Delgado-Friedrichs
 (Antonia.Polygon@gmail.com or odf at renderosity.com) with
-contributions from phantom3D and MikeJ.
+contributions from phantom3D, MikeJ and others.
 
 Antonia was created using Wings3D, Poser and DAZ Studio, as well as a
-number of home-made software tools. Since October 2008, the
+number of home-made software tools. As of October 2008, the
 development of the figure has been documented and discussed in the
 Poser forum at Renderosity (http://www.renderosity.com), and the
 project owes a lot to the continuing feedback and support of the
 Renderosity community.
+
+Please note that Antonia is not a commercial figure and has been
+developed over several years on the various contributors' spare time.
+Because of this, you may not find everything you'd expect from a
+full-fledged Poser figure right in this package. Some extra content
+such as textures, clothing, pose sets and so on is available from
+BlueEcho's Antonia site (see below), and more may be found across the
+web.
+
+Please note that while Antonia is provided free of charge with
+very liberal licensing, this is not necessarily true for any content
+distributed separately. In particularly, the creation of commercial
+packages based on or related to Antonia is explicitly encouraged.
+
+Obviously, if you use Antonia for any published or commercial work, I
+would love to hear about it.
+
 
 For further information and free content, visit these sites:
 
 Home page:    http://sites.google.com/site/antoniapolygon
 Wiki:         http://www.renderosity.com/mod/rrwiki/index.php/Antonia
 Free content: http://www.bluecho4u3d.com/Antonia
+Cutting edge: http://github.com/odf/Antonia.Polygon
 
-=== ABOUT THIS RELEASE (VERSION 0.9.127) ===
 
-This is a development release, but well on the way to a stable
-version.  What that means is that as an end user, you might not find
-everything you'd expect from a full-fledged Poser figure right in this
-package. Some of these may be available in separate packages from
-contributors to the project, or may not yet be available at all. As a
-developer, it means that there is still a small risk that there will
-be changes on the way to Version 1.0 which will require you to update
-your content.
+=== ABOUT THIS RELEASE (VERSION 1.0.0 beta1) ===
 
-Unlike previous releases, this one does not contain any contributed
-textures or morphs. Please watch
-http://sites.google.com/site/antoniapolygon/ for future versions and
-additional content.
+This is a beta test release and may still contain some bugs. It will
+very soon be superseded by the first stable release.
 
 Currently, only Poser 6 and later are supported. The base figure
 should however work fine with Poser 4 and most software that can
 accept Poser 4 content.
 
-If you redistribute this work in unmodified or modified form, it is
-highly recommended that you keep in touch with the original creators.
-Also, if you create any published or commercial content based on this
-work, we would be thrilled to hear about it.
 
 === LICENSING ===
 
@@ -50,10 +54,11 @@ http://creativecommons.org/licenses/by/3.0/ or send a letter to
 Creative Commons, 171 Second Street, Suite 300, San Francisco,
 California, 94105, USA.
 
+
 === WHAT THE LICENSE MEANS ===
 
 (DISCLAIMER: The following is not a license and has no legal
-implications. It is simply a human-readable expression of the
+implications.  It is simply a human-readable expression of the
 key-terms of the license.  It is based on the license deed as provided
 by Creative Commons under the URL
 http://creativecommons.org/licenses/by/3.0, with a modification in the

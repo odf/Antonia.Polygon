@@ -1,5 +1,5 @@
-Changes in 0.9.127:
-==================
+Changes in 1.0.0:
+================
 - better joint parameters for the tongue2 actor
 - synchronized the eyelid positions with the eyeball x-rotations
 - created a set of expression morphs
