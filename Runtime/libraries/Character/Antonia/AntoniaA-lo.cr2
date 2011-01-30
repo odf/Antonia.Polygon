@@ -4,7 +4,7 @@ version
 	{
 	number 4.01
 	}
-figureResFile ":Runtime:Geometries:Antonia:Antonia-127-lo.obj"
+figureResFile ":Runtime:Geometries:Antonia:AntoniaA-lo.obj"
 actor BODY:1
 	{
 	
@@ -329,7 +329,7 @@ actor rIndex3:1
 	storageOffset 0 0 0
 	geomHandlerGeom 13 rIndex3
 	}
-figureResFile ":Runtime:Geometries:Antonia:Antonia-127-lo.obj"
+figureResFile ":Runtime:Geometries:Antonia:AntoniaA-lo.obj"
 
 actor BODY:1
 	{
@@ -69713,7 +69713,7 @@ actor rIndex3:1
 
 figure
 	{
-	name Antonia-127-lo
+	name AntoniaA-lo
 	root BODY:1
 	addChild hip:1
 		BODY:1
