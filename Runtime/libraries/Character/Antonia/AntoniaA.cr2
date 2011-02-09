@@ -41176,7 +41176,7 @@ actor chest:1
 				}
 			blendType 0
 			}
-		valueParm Breasts-classic
+		targetGeom Breasts-classic
 			{
 			name Breasts-classic
 			initValue 0
@@ -41184,15 +41184,21 @@ actor chest:1
 			forceLimits 1
 			min 0
 			max 1
-			trackingScale 0.04
+			trackingScale 0.02
 			keys
 				{
 				static 0
 				k 0 0
 				}
 			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
 			}
-		valueParm Nipples-classic
+		targetGeom Nipples-classic
 			{
 			name Nipples-classic
 			initValue 0
@@ -41200,13 +41206,19 @@ actor chest:1
 			forceLimits 1
 			min 0
 			max 1
-			trackingScale 0.04
+			trackingScale 0.02
 			keys
 				{
 				static 0
 				k 0 0
 				}
 			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
 			}
 		targetGeom PBM-breasts-classic
 			{
@@ -70166,7 +70178,7 @@ actor head:1
 				{
 				}
 			}
-		valueParm CTRLHeadGrow
+		targetGeom CTRLHeadGrow
 			{
 			name HeadGrow
 			initValue 0
@@ -70181,6 +70193,11 @@ actor head:1
 				k 0 0
 				}
 			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
 			}
 		smoothScaleY neck_smooY
 			{
