@@ -1,5 +1,6 @@
 Changes in 1.0.0:
 ================
+- put all visible channels into groups
 - use targetGeom channels for all user-faced custom settings
 - better joint parameters for the tongue2 actor
 - synchronized the eyelid positions with the eyeball x-rotations
