@@ -376,6 +376,11 @@ actor BODY:1
 						}
 					}
 				}
+			groupNode Util
+				{
+				collapsed 0
+				parmNode Toecaps-gone
+				}
 			groupNode JCMs
 				{
 				collapsed 1
@@ -2208,7 +2213,7 @@ actor BODY:1
 				}
 			interpStyleLocked 0
 			}
-		valueParm Toecaps-gone
+		targetGeom Toecaps-gone
 			{
 			name Toecaps-gone
 			initValue 0
@@ -2216,13 +2221,19 @@ actor BODY:1
 			forceLimits 1
 			min 0
 			max 1
-			trackingScale 0.04
+			trackingScale 1
 			keys
 				{
 				static 0
 				k 0 0
 				}
 			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
+			blendType 0
 			}
 		valueParm One
 			{
@@ -3389,6 +3400,11 @@ actor hip2:1
 						parmNode zScale
 						}
 					}
+				}
+			groupNode Shape
+				{
+				collapsed 0
+				parmNode Labia-detailled
 				}
 			}
 		targetGeom JCM-rThighIn
@@ -10965,6 +10981,12 @@ actor rToe:1
 						parmNode zScale
 						}
 					}
+				}
+			groupNode Pose
+				{
+				collapsed 0
+				parmNode ToeCurl
+				parmNode ToeSpread
 				}
 			}
 		targetGeom JCM-rToeBendUp
@@ -18744,6 +18766,12 @@ actor lToe:1
 						}
 					}
 				}
+			groupNode Pose
+				{
+				collapsed 0
+				parmNode ToeCurl
+				parmNode ToeSpread
+				}
 			}
 		targetGeom JCM-lToeBendUp
 			{
@@ -22814,6 +22842,12 @@ actor chest:1
 						}
 					}
 				}
+			groupNode Shape
+				{
+				collapsed 0
+				parmNode Breasts-classic
+				parmNode Nipples-classic
+				}
 			}
 		targetGeom JCM-MouthOpen
 			{
@@ -25879,6 +25913,12 @@ actor head:1
 						parmNode zScale
 						}
 					}
+				}
+			groupNode Util
+				{
+				collapsed 0
+				parmNode Brows-gone
+				parmNode CTRLHeadGrow
 				}
 			groupNode Expressions
 				{
@@ -32679,9 +32719,9 @@ actor head:1
 			initValue 0
 			hidden 0
 			forceLimits 1
-			min -1
+			min 0
 			max 1
-			trackingScale 0.01
+			trackingScale 1
 			keys
 				{
 				static 0
@@ -41163,6 +41203,14 @@ actor lHand:1
 						}
 					}
 				}
+			groupNode Pose
+				{
+				collapsed 0
+				parmNode CTRLLHandGrasp
+				parmNode CTRLLHandSpread
+				parmNode CTRLLThumbGrasp
+				parmNode CTRLLThumbCurl
+				}
 			}
 		targetGeom JCM-lThumbGraspNeg
 			{
@@ -41812,6 +41860,11 @@ actor lHand:1
 				k 0 0
 				}
 			interpStyleLocked 0
+			indexes 0
+			numbDeltas 0
+			deltas
+				{
+				}
 			}
 		targetGeom CTRLLHandSpread
 			{
@@ -57439,6 +57492,14 @@ actor rHand:1
 						parmNode zScale
 						}
 					}
+				}
+			groupNode Pose
+				{
+				collapsed 0
+				parmNode CTRLRHandGrasp
+				parmNode CTRLRHandSpread
+				parmNode CTRLRThumbGrasp
+				parmNode CTRLRThumbCurl
 				}
 			}
 		targetGeom JCM-rThumbGraspNeg
