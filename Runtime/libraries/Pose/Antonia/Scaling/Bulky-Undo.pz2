@@ -37,7 +37,7 @@ actor BODY
 			}
 		}
 	}
-actor hip
+actor waist
 	{
 	channels
 		{
@@ -71,7 +71,7 @@ actor hip
 			}
 		}
 	}
-actor hip2
+actor hip
 	{
 	channels
 		{

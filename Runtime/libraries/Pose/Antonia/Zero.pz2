@@ -100,7 +100,7 @@ controlProp CenterOfMass:1
 			}
 		}
 	}
-actor hip:1
+actor waist:1
 	{
 	channels
 		{
@@ -148,7 +148,7 @@ actor hip:1
 			}
 		}
 	}
-actor hip2:1
+actor hip:1
 	{
 	channels
 		{

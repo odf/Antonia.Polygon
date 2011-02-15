@@ -9,15 +9,15 @@ actor BODY:1
 	{
 	
 	}
+actor waist:1
+	{
+	storageOffset 0 0 0
+	geomHandlerGeom 13 waist
+	}
 actor hip:1
 	{
 	storageOffset 0 0 0
 	geomHandlerGeom 13 hip
-	}
-actor hip2:1
-	{
-	storageOffset 0 0 0
-	geomHandlerGeom 13 hip2
 	}
 actor rThigh:1
 	{
@@ -2523,9 +2523,9 @@ actor BODY:1
 	customMaterial 0
 	}
 
-actor hip:1
+actor waist:1
 	{
-	name hip
+	name waist
 	on
 	bend 1
 	dynamicsLock 0
@@ -2982,9 +2982,9 @@ actor hip:1
 			flipped
 			calcWeights
 			}
-		twistY hip2_twisty
+		twistY hip_twisty
 			{
-			name hip2_twisty
+			name hip_twisty
 			initValue 0
 			hidden 1
 			forceLimits 0
@@ -2997,7 +2997,7 @@ actor hip:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			otherActor hip2:1
+			otherActor hip:1
 			matrixActor NULL
 			center 0 0.407 -0.022
 			startPt 0.437611
@@ -3005,9 +3005,9 @@ actor hip:1
 			flipped
 			calcWeights
 			}
-		jointZ hip2_jointz
+		jointZ hip_jointz
 			{
-			name hip2_jointz
+			name hip_jointz
 			initValue 0
 			hidden 1
 			forceLimits 0
@@ -3021,7 +3021,7 @@ actor hip:1
 				}
 			interpStyleLocked 0
 			angles 40 -10 -170 140
-			otherActor hip2:1
+			otherActor hip:1
 			matrixActor NULL
 			center 0 0.407 -0.022
 			flipped
@@ -3033,9 +3033,9 @@ actor hip:1
 			jointMult 1
 			calcWeights
 			}
-		jointX hip2_jointx
+		jointX hip_jointx
 			{
-			name hip2_jointx
+			name hip_jointx
 			initValue 0
 			hidden 1
 			forceLimits 0
@@ -3049,7 +3049,7 @@ actor hip:1
 				}
 			interpStyleLocked 0
 			angles 55.0321 -20 -125.397 150.966
-			otherActor hip2:1
+			otherActor hip:1
 			matrixActor NULL
 			center 0 0.407 -0.022
 			flipped
@@ -3071,9 +3071,9 @@ actor hip:1
 			jointMult 1
 			calcWeights
 			}
-		smoothScaleY hip2_smooY
+		smoothScaleY hip_smooY
 			{
-			name hip2_smooY
+			name hip_smooY
 			initValue 0
 			hidden 1
 			forceLimits 0
@@ -3087,7 +3087,7 @@ actor hip:1
 				}
 			interpStyleLocked 0
 			smoothZones 0.391689 0.437407 99 100
-			otherActor hip2:1
+			otherActor hip:1
 			flipped
 			calcWeights
 			}
@@ -3363,9 +3363,9 @@ actor hip:1
 	customMaterial 0
 	}
 
-actor hip2:1
+actor hip:1
 	{
-	name Hip2
+	name hip
 	on
 	bend 1
 	dynamicsLock 0
@@ -3373,7 +3373,7 @@ actor hip2:1
 	addToMenu 1
 	castsShadow 1
 	includeInDepthCue 1
-	parent hip:1
+	parent waist:1
 	channels
 		{
 		groups
@@ -6195,9 +6195,9 @@ actor hip2:1
 			flipped
 			calcWeights
 			}
-		smoothScaleY hip_smooY
+		smoothScaleY waist_smooY
 			{
-			name hip_smooY
+			name waist_smooY
 			initValue 0
 			hidden 1
 			forceLimits 0
@@ -6211,7 +6211,7 @@ actor hip2:1
 				}
 			interpStyleLocked 0
 			smoothZones -100 -99 0.391689 0.437407
-			otherActor hip:1
+			otherActor waist:1
 			calcWeights
 			}
 		zOffsetA zOffset
@@ -6345,7 +6345,7 @@ actor hip2:1
 				}
 			interpStyleLocked 0
 			angles 55.0321 -20 -125.397 150.966
-			otherActor hip:1
+			otherActor waist:1
 			matrixActor NULL
 			center 0 0.407 -0.022
 			sphereMatsRaw
@@ -6382,7 +6382,7 @@ actor hip2:1
 				}
 			interpStyleLocked 0
 			angles 40 -10 -170 140
-			otherActor hip:1
+			otherActor waist:1
 			matrixActor NULL
 			center 0 0.407 -0.022
 			doBulge 1
@@ -6408,7 +6408,7 @@ actor hip2:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			otherActor hip:1
+			otherActor waist:1
 			matrixActor NULL
 			center 0 0.407 -0.022
 			startPt 0.437611
@@ -6582,7 +6582,7 @@ actor rThigh:1
 	addToMenu 1
 	castsShadow 1
 	includeInDepthCue 1
-	parent hip2:1
+	parent hip:1
 	channels
 		{
 		groups
@@ -7896,9 +7896,9 @@ actor rThigh:1
 			flipped
 			calcWeights
 			}
-		smoothScaleY hip2_smooY
+		smoothScaleY hip_smooY
 			{
-			name hip2_smooY
+			name hip_smooY
 			initValue 0
 			hidden 1
 			forceLimits 0
@@ -7912,7 +7912,7 @@ actor rThigh:1
 				}
 			interpStyleLocked 0
 			smoothZones -100 -99 0.239398 0.337203
-			otherActor hip2:1
+			otherActor hip:1
 			calcWeights
 			}
 		zOffsetA zOffset
@@ -8046,7 +8046,7 @@ actor rThigh:1
 				}
 			interpStyleLocked 0
 			angles 66.437 -27.786 -144.931 128.245
-			otherActor hip2:1
+			otherActor hip:1
 			matrixActor NULL
 			center -0.036 0.386 -0.023
 			sphereMatsRaw
@@ -8083,7 +8083,7 @@ actor rThigh:1
 				}
 			interpStyleLocked 0
 			angles 48.881 -74.967 -110.208 125.847
-			otherActor hip2:1
+			otherActor hip:1
 			matrixActor NULL
 			center -0.036 0.386 -0.023
 			sphereMatsRaw
@@ -8119,7 +8119,7 @@ actor rThigh:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			otherActor hip2:1
+			otherActor hip:1
 			matrixActor NULL
 			center -0.036 0.386 -0.023
 			startPt 0.354
@@ -14305,7 +14305,7 @@ actor lThigh:1
 	addToMenu 1
 	castsShadow 1
 	includeInDepthCue 1
-	parent hip2:1
+	parent hip:1
 	channels
 		{
 		groups
@@ -15680,9 +15680,9 @@ actor lThigh:1
 			flipped
 			calcWeights
 			}
-		smoothScaleY hip2_smooY
+		smoothScaleY hip_smooY
 			{
-			name hip2_smooY
+			name hip_smooY
 			initValue 0
 			hidden 1
 			forceLimits 0
@@ -15696,7 +15696,7 @@ actor lThigh:1
 				}
 			interpStyleLocked 0
 			smoothZones -100 -99 0.239398 0.337203
-			otherActor hip2:1
+			otherActor hip:1
 			calcWeights
 			}
 		zOffsetA zOffset
@@ -15830,7 +15830,7 @@ actor lThigh:1
 				}
 			interpStyleLocked 0
 			angles 66.437 -27.786 -144.931 128.245
-			otherActor hip2:1
+			otherActor hip:1
 			matrixActor NULL
 			center 0.036 0.386 -0.023
 			sphereMatsRaw
@@ -15867,7 +15867,7 @@ actor lThigh:1
 				}
 			interpStyleLocked 0
 			angles 54.153 -69.792 -105.033 131.119
-			otherActor hip2:1
+			otherActor hip:1
 			matrixActor NULL
 			center 0.036 0.386 -0.023
 			sphereMatsRaw
@@ -15903,7 +15903,7 @@ actor lThigh:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			otherActor hip2:1
+			otherActor hip:1
 			matrixActor NULL
 			center 0.036 0.386 -0.023
 			startPt 0.354
@@ -22089,7 +22089,7 @@ actor abdomen:1
 	addToMenu 1
 	castsShadow 1
 	includeInDepthCue 1
-	parent hip:1
+	parent waist:1
 	channels
 		{
 		groups
@@ -22437,9 +22437,9 @@ actor abdomen:1
 			flipped
 			calcWeights
 			}
-		smoothScaleY hip_smooY
+		smoothScaleY waist_smooY
 			{
-			name hip_smooY
+			name waist_smooY
 			initValue 0
 			hidden 1
 			forceLimits 0
@@ -22453,7 +22453,7 @@ actor abdomen:1
 				}
 			interpStyleLocked 0
 			smoothZones 0.436011 0.468753 99 100
-			otherActor hip:1
+			otherActor waist:1
 			calcWeights
 			}
 		zOffsetA zOffset
@@ -22587,7 +22587,7 @@ actor abdomen:1
 				}
 			interpStyleLocked 0
 			angles -132.387 153.192 45.083 -23.64
-			otherActor hip:1
+			otherActor waist:1
 			matrixActor NULL
 			center 0 0.449 -0.0097304
 			doBulge 1
@@ -22614,7 +22614,7 @@ actor abdomen:1
 				}
 			interpStyleLocked 0
 			angles -160 155 25 -20
-			otherActor hip:1
+			otherActor waist:1
 			matrixActor NULL
 			center 0 0.449 -0.0097304
 			doBulge 1
@@ -22640,7 +22640,7 @@ actor abdomen:1
 				k 0 0
 				}
 			interpStyleLocked 0
-			otherActor hip:1
+			otherActor waist:1
 			matrixActor NULL
 			center 0 0.449 -0.0097304
 			startPt 0.42873
@@ -69821,12 +69821,12 @@ figure
 	{
 	name AntoniaA-lo
 	root BODY:1
-	addChild hip:1
+	addChild waist:1
 		BODY:1
-	addChild hip2:1
-		hip:1
+	addChild hip:1
+		waist:1
 	addChild abdomen:1
-		hip:1
+		waist:1
 	addChild chest:1
 		abdomen:1
 	addChild neck:1
@@ -69922,7 +69922,7 @@ figure
 	addChild lPinky3:1
 		lPinky2:1
 	addChild rThigh:1
-		hip2:1
+		hip:1
 	addChild rShin:1
 		rThigh:1
 	addChild rFoot:1
@@ -69936,7 +69936,7 @@ figure
 	addChild rBigToe2:1
 		rBigToe1:1
 	addChild lThigh:1
-		hip2:1
+		hip:1
 	addChild lShin:1
 		lThigh:1
 	addChild lFoot:1
@@ -69989,12 +69989,12 @@ figure
 		linkWeight 0 1
 		linkWeight 1 0.2
 		}
-	defaultPick hip:1
+	defaultPick waist:1
 	displayOn 1
-	weld hip2:1
-		hip:1
+	weld hip:1
+		waist:1
 	weld rThigh:1
-		hip2:1
+		hip:1
 	weld rShin:1
 		rThigh:1
 	weld rFoot:1
@@ -70008,7 +70008,7 @@ figure
 	weld rBigToe2:1
 		rBigToe1:1
 	weld lThigh:1
-		hip2:1
+		hip:1
 	weld lShin:1
 		lThigh:1
 	weld lFoot:1
@@ -70022,7 +70022,7 @@ figure
 	weld lBigToe2:1
 		lBigToe1:1
 	weld abdomen:1
-		hip:1
+		waist:1
 	weld chest:1
 		abdomen:1
 	weld neck:1
