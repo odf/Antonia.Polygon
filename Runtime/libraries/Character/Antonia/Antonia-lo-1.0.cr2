@@ -8099,9 +8099,9 @@ actor hip:1
 			name xtran
 			initValue 0
 			hidden 1
-			forceLimits 0
-			min -100000
-			max 100000
+			forceLimits 1
+			min 0
+			max 0
 			trackingScale 0.001
 			keys
 				{
@@ -8115,9 +8115,9 @@ actor hip:1
 			name ytran
 			initValue 0
 			hidden 1
-			forceLimits 0
-			min -100000
-			max 100000
+			forceLimits 1
+			min 0
+			max 0
 			trackingScale 0.001
 			keys
 				{
@@ -8131,9 +8131,9 @@ actor hip:1
 			name ztran
 			initValue 0
 			hidden 1
-			forceLimits 0
-			min -100000
-			max 100000
+			forceLimits 1
+			min 0
+			max 0
 			trackingScale 0.001
 			keys
 				{
