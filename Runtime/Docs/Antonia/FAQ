@@ -1,0 +1,25 @@
+Why are there four different CR2 files?
+=======================================
+
+Antonia comes with two different UV mappings and in two different
+resolutions. The 'A' mapping (AntoniaA and AntoniaA-lo) is the
+original mapping made by me (odf). The new mapping (Antonia and
+Antonia-lo) was made by Renderosity member MikeJ and is cut more
+conventionally. There are free textures available for both mappings,
+so if you load a texture and it does not fit, be sure to try it with
+the other mapping. In other words, if you've loaded AntoniaA or
+AntoniaA-lo, try Antonia or Antonia-lo, and vice versa.
+
+What are the relative scaling factors of the UV maps?
+=====================================================
+
+(This question will not concern you unless you make textures.)
+
+The scaling factors for the 'A' mapping are as follows:
+
+1 x for body and feet
+2 x for hands and skull
+4 x for the nails and everything on the face map
+4 x vertical and 10 x horizontal for the genitals
+
+I have no idea about the other mapping.

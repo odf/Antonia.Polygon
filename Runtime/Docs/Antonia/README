@@ -40,9 +40,20 @@ Free content: http://www.bluecho4u3d.com/Antonia
 Cutting edge: http://github.com/odf/Antonia.Polygon
 
 
-=== ABOUT THIS RELEASE (VERSION 1.0.0) ===
+=== ABOUT THIS RELEASE (VERSION 1.2.0) ===
 
-This is the first stable release of Antonia Polygon.
+This is the second stable release of Antonia Polygon. Please note that
+poses and full-body morphs made for version 1.0.0 and earlier may not
+work on this version, since the former 'hip2' actor has been renamed
+to 'hip' and the former 'hip' actor to 'waist'. The change became
+necessary in order to make Wardrobe Wizard support possible.
+
+In general, it should be very easy to update files using the old actor
+names: replace 'hip' with 'waist' everywhere in the file, and then
+replace 'waist2' with 'hip'. Be careful if your file contains 'hip' or
+'waist' as parts of longer words, though. For example, a brute-force
+replacement as described above would turn the word 'shipment' into
+'swaistment'.
 
 Currently, only Poser 6 and later are supported. The base figure
 should however work fine with Poser 4 and most software that can
