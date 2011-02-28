@@ -125643,7 +125643,7 @@ figure
 		{
 		KdColor 0.8 0.8 0.8 0
 		KaColor 0 0 0 0
-		KsColor 0.6 0.6 0.6 0
+		KsColor 0 0 0 0
 		TextureColor 1 1 1 1
 		NsExponent 10
 		tMin 1
@@ -125664,7 +125664,7 @@ figure
 		{
 		KdColor 0.8 0.8 0.8 0
 		KaColor 0 0 0 0
-		KsColor 0.6 0.6 0.6 0
+		KsColor 0 0 0 0
 		TextureColor 1 1 1 1
 		NsExponent 10
 		tMin 1
@@ -125685,7 +125685,7 @@ figure
 		{
 		KdColor 0.8 0.8 0.8 0
 		KaColor 0 0 0 0
-		KsColor 0.6 0.6 0.6 0
+		KsColor 0 0 0 0
 		TextureColor 1 1 1 1
 		NsExponent 10
 		tMin 1

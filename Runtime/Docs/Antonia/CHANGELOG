@@ -1,5 +1,6 @@
 Changes in 1.2.0:
 ================
+- removed highlights from toecap and brow material defaults
 - blocked translations of the hip (previously hip2) actor
 - added more empty morph channels
 - renamed actor hip to waist and hip2 to hip for WW-compliance
